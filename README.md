@@ -1,8 +1,8 @@
 # FortiFi
 
-[![CI](https://github.com/fortifi/fortifi/actions/workflows/ci.yml/badge.svg)](https://github.com/fortifi/fortifi/actions/workflows/ci.yml)
-[![npm version](https://badge.fury.io/js/%40fortifi%2Fcore.svg)](https://badge.fury.io/js/%40fortifi%2Fcore)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)
 
 Open-source toolkit that hardens paywalls against CSS/DOM bypasses through server-side enforcement, short-lived tokens, watermarking, and rate limiting.
 
