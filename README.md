@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.png" alt="FortiFi Logo" width="200" height="80" onerror="this.style.display='none'">
+  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.svg" alt="FortiFi Logo" width="200" height="80">
   <h1>🛡️ FortiFi</h1>
   <p><em>Paywall Hardening & Content Protection</em></p>
 </div>
