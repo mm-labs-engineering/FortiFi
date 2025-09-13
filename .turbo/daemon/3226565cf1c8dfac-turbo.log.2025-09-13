@@ -1,0 +1,186 @@
+2025-09-13T21:00:39.520632Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/1.cookie"), AnchoredSystemPathBuf(".turbo/cookies/.turbo-cookie")}
+2025-09-13T21:00:39.520641Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:00:39.621283Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/.turbo"), AnchoredSystemPathBuf("packages/client/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/3.cookie"), AnchoredSystemPathBuf(".turbo/cookies/2.cookie")}
+2025-09-13T21:00:39.621293Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }, WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:00:49.320762Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/redis.ts")}
+2025-09-13T21:00:49.320770Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T21:00:59.521213Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/4.cookie")}
+2025-09-13T21:00:59.521225Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:00:59.621106Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/6.cookie"), AnchoredSystemPathBuf(".turbo/cookies/5.cookie")}
+2025-09-13T21:00:59.621113Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:01:04.121013Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/redis.ts")}
+2025-09-13T21:01:04.121022Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T21:01:06.321201Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/index.ts")}
+2025-09-13T21:01:06.321209Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T21:01:09.921560Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/index.ts")}
+2025-09-13T21:01:09.921578Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T21:01:14.421034Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/9.cookie"), AnchoredSystemPathBuf(".turbo/cookies/7.cookie"), AnchoredSystemPathBuf(".turbo/cookies/8.cookie")}
+2025-09-13T21:01:14.421045Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:01:19.021201Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/redis.ts")}
+2025-09-13T21:01:19.021208Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T21:01:22.420746Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/10.cookie")}
+2025-09-13T21:01:22.420753Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:01:22.521120Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/12.cookie"), AnchoredSystemPathBuf(".turbo/cookies/11.cookie")}
+2025-09-13T21:01:22.521126Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:01:23.320257Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/14.cookie"), AnchoredSystemPathBuf("packages/cloud/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/13.cookie")}
+2025-09-13T21:01:23.320265Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T21:01:29.320863Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/src/client.ts")}
+2025-09-13T21:01:29.320871Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T21:01:31.021353Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/src/dom.ts")}
+2025-09-13T21:01:31.021365Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T21:01:32.920756Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/src/dom.ts")}
+2025-09-13T21:01:32.920763Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T21:01:39.221506Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/15.cookie")}
+2025-09-13T21:01:39.221518Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:01:39.321478Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/16.cookie"), AnchoredSystemPathBuf("packages/core/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/17.cookie"), AnchoredSystemPathBuf(".turbo/cookies/19.cookie"), AnchoredSystemPathBuf(".turbo/cookies/18.cookie")}
+2025-09-13T21:01:39.321487Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T21:01:39.321503Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:02:19.720999Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("test-simple.js")}
+2025-09-13T21:02:19.721007Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:02:45.321147Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("_tmp_6320_22084003a07951b8ac98e88805f6e0bc")}
+2025-09-13T21:02:45.321161Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:02:46.321063Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml"), AnchoredSystemPathBuf("pnpm-lock.yaml.789691731")}
+2025-09-13T21:02:46.321077Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:02:46.420688Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json.349342811"), AnchoredSystemPathBuf("package.json")}
+2025-09-13T21:02:46.420696Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-09-13T21:03:16.920861Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/redis.ts"), AnchoredSystemPathBuf("packages/core/src/index.ts"), AnchoredSystemPathBuf("test-simple.js"), AnchoredSystemPathBuf("packages/client/src/dom.ts"), AnchoredSystemPathBuf("packages/core/package.json"), AnchoredSystemPathBuf("packages/client/src/client.ts")}
+2025-09-13T21:03:16.920894Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }, WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:03:16.936166Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:03:16.936187Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:05:08.921760Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md"), AnchoredSystemPathBuf("README.md")}
+2025-09-13T21:05:08.921774Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:05:09.020130Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md"), AnchoredSystemPathBuf("README.md")}
+2025-09-13T21:05:09.020137Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:05:16.120309Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md")}
+2025-09-13T21:05:16.120320Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:05:22.021330Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md")}
+2025-09-13T21:05:22.021337Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:05:28.920476Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md")}
+2025-09-13T21:05:28.920487Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:05:37.420847Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md")}
+2025-09-13T21:05:37.420854Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:08:54.521129Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md")}
+2025-09-13T21:08:54.521137Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:09:07.420724Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md")}
+2025-09-13T21:09:07.420731Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:09:16.021798Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/roadmap.md")}
+2025-09-13T21:09:16.021811Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:10:21.420917Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/21.cookie"), AnchoredSystemPathBuf(".turbo/cookies/22.cookie"), AnchoredSystemPathBuf(".turbo/cookies/20.cookie")}
+2025-09-13T21:10:21.420925Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:10:23.024113Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/24.cookie"), AnchoredSystemPathBuf(".turbo/cookies/23.cookie")}
+2025-09-13T21:10:23.024138Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:10:23.721984Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/25.cookie"), AnchoredSystemPathBuf(".turbo/cookies/26.cookie")}
+2025-09-13T21:10:23.721992Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:10:31.421988Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/config.ts")}
+2025-09-13T21:10:31.422006Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:10:33.521585Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:10:33.521594Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:10:36.121925Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:10:36.121932Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:10:39.321555Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:10:39.321563Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:10:42.121804Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:10:42.121811Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:10:46.921695Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:10:46.921712Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:10:51.420244Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:10:51.420250Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:11:23.320514Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("DEMO_SETUP.md")}
+2025-09-13T21:11:23.320530Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:11:23.420675Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("DEMO_SETUP.md")}
+2025-09-13T21:11:23.420681Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:11:33.121869Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts"), AnchoredSystemPathBuf("DEMO_SETUP.md"), AnchoredSystemPathBuf("examples/demo/src/config.ts")}
+2025-09-13T21:11:33.121876Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:11:33.129394Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:13:54.437072Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:13:54.437080Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:13:56.836434Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:13:56.836444Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:14:08.536197Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:14:08.536205Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:14:08.536217Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:14:26.837265Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:14:26.837273Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:14:36.737531Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:14:36.737550Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:14:36.737575Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:15:45.337406Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:15:45.337413Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:15:48.936423Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:15:48.936479Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:15:58.137634Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:15:58.137643Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:15:58.137661Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:16:46.836866Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:16:46.836879Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:16:49.437250Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:16:49.437288Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:16:49.437348Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:17:07.637612Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:17:07.637621Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:17:10.438320Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:17:10.438331Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:17:13.036525Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:17:13.036536Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:17:16.037265Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:17:16.037274Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:17:19.036884Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:17:19.036891Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:17:27.437877Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T21:17:27.437886Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:17:40.738158Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html"), AnchoredSystemPathBuf("examples/demo/src/server.ts"), AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:17:40.738174Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:17:40.738209Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:18:27.436851Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:18:27.436858Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:18:34.937242Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:18:34.937256Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:18:43.038122Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/article.html"), AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:18:43.038132Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:18:43.050219Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:19:40.337532Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("CLIENT_USAGE.md")}
+2025-09-13T21:19:40.337563Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:19:40.438748Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("CLIENT_USAGE.md")}
+2025-09-13T21:19:40.438763Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:19:59.638615Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("INTEGRATION_EXAMPLE.md")}
+2025-09-13T21:19:59.638631Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:20:16.838716Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides"), AnchoredSystemPathBuf("docs/examples"), AnchoredSystemPathBuf("docs/api")}
+2025-09-13T21:20:16.838748Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:20:22.337837Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("CLIENT_USAGE.md"), AnchoredSystemPathBuf("docs/guides/client-usage.md")}
+2025-09-13T21:20:22.337847Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:20:31.738737Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("INTEGRATION_EXAMPLE.md"), AnchoredSystemPathBuf("docs/examples/integration-example.md")}
+2025-09-13T21:20:31.738776Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:20:41.638573Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/demo-setup.md"), AnchoredSystemPathBuf("DEMO_SETUP.md")}
+2025-09-13T21:20:41.638584Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:20:45.239244Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/api-openapi.yaml"), AnchoredSystemPathBuf("docs/api/openapi.yaml")}
+2025-09-13T21:20:45.239253Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:21:04.339349Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/README.md")}
+2025-09-13T21:21:04.339363Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:21:04.439071Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/README.md")}
+2025-09-13T21:21:04.439087Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:21:19.838694Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/quick-start.md")}
+2025-09-13T21:21:19.838710Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:21:19.938709Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/quick-start.md")}
+2025-09-13T21:21:19.938723Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:21:48.239004Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/installation.md")}
+2025-09-13T21:21:48.239015Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:21:48.338773Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/installation.md")}
+2025-09-13T21:21:48.338787Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:22:29.139063Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/api/core-api.md")}
+2025-09-13T21:22:29.139076Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:23:05.038997Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/README.md")}
+2025-09-13T21:23:05.039012Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:23:31.039647Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/quick-start.md")}
+2025-09-13T21:23:31.039660Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:24:26.539194Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/installation.md")}
+2025-09-13T21:24:26.539208Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:24:34.539942Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/README.md"), AnchoredSystemPathBuf("docs/guides/quick-start.md"), AnchoredSystemPathBuf("docs/guides/installation.md")}
+2025-09-13T21:24:34.539958Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:24:35.739487Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/README.md"), AnchoredSystemPathBuf("docs/guides/installation.md"), AnchoredSystemPathBuf("docs/guides/quick-start.md")}
+2025-09-13T21:24:35.739496Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:26:33.140446Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/client-usage.md")}
+2025-09-13T21:26:33.140458Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:27:13.640056Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/examples/integration-examples.md")}
+2025-09-13T21:27:13.640065Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:27:20.239520Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/guides/client-usage.md"), AnchoredSystemPathBuf("docs/examples/integration-examples.md")}
+2025-09-13T21:27:20.239534Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))

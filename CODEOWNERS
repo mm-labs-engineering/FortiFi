@@ -1,0 +1,38 @@
+# Global owners
+* @fortifi/core-team
+
+# Core package
+/packages/core/ @fortifi/core-team @fortifi/security-team
+
+# Client package
+/packages/client/ @fortifi/core-team @fortifi/frontend-team
+
+# Cloud package
+/packages/cloud/ @fortifi/core-team @fortifi/backend-team @fortifi/security-team
+
+# Demo and examples
+/examples/ @fortifi/core-team @fortifi/demo-team
+
+# Documentation
+/docs/ @fortifi/core-team @fortifi/docs-team
+*.md @fortifi/core-team @fortifi/docs-team
+
+# CI/CD and workflows
+/.github/ @fortifi/core-team @fortifi/devops-team
+
+# Docker and deployment
+/docker-compose.yml @fortifi/core-team @fortifi/devops-team
+/Dockerfile @fortifi/core-team @fortifi/devops-team
+/nginx.conf @fortifi/core-team @fortifi/devops-team
+
+# Configuration files
+/package.json @fortifi/core-team
+/pnpm-workspace.yaml @fortifi/core-team
+/turbo.json @fortifi/core-team
+/.eslintrc.js @fortifi/core-team
+/.prettierrc @fortifi/core-team
+/tsconfig.json @fortifi/core-team
+
+# Security-related files
+/SECURITY.md @fortifi/security-team @fortifi/core-team
+/.github/ISSUE_TEMPLATE/security_vulnerability.md @fortifi/security-team

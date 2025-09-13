@@ -1,0 +1,37 @@
+name: Good First Issues
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Run every Monday at midnight
+  workflow_dispatch:
+
+jobs:
+  label-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label good first issues
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'good first issue',
+            });
+
+            for (const issue of issues) {
+              // Check if issue has been open for more than 7 days
+              const createdAt = new Date(issue.created_at);
+              const daysSinceCreated = (Date.now() - createdAt.getTime()) / (1000 * 60 * 60 * 24);
+              
+              if (daysSinceCreated > 7) {
+                // Add "help wanted" label
+                await github.rest.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  labels: ['help wanted'],
+                });
+              }
+            }
