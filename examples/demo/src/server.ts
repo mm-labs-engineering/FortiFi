@@ -207,7 +207,7 @@ app.get('/api/article/:id/content', (req, res) => {
   
   // Check for token in Authorization header or query parameter
   const authHeader = req.headers.authorization;
-  const tokenFromQuery = req.query.token as string;
+  const tokenFromQuery = req.query['token'] as string;
   
   if (authHeader && authHeader.startsWith('Bearer ')) {
     const token = authHeader.substring(7);
