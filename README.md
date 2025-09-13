@@ -1,11 +1,5 @@
 <div align="center">
-  <svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 15 L20 25 C20 35, 30 45, 50 50 C70 45, 80 35, 80 25 L80 15 C80 10, 75 5, 70 5 L30 5 C25 5, 20 10, 20 15 Z" fill="#4CAF50" stroke="#45a049" stroke-width="1"/>
-    <circle cx="50" cy="25" r="8" fill="#212121"/>
-    <rect x="46" y="25" width="8" height="12" fill="#212121"/>
-    <rect x="44" y="35" width="12" height="3" fill="#212121"/>
-    <text x="100" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212121">FortiFi</text>
-  </svg>
+  <img width="704" height="229" alt="Screenshot 2025-09-13 at 2 56 09 PM" src="https://github.com/user-attachments/assets/1b71dbe6-fbe6-49f5-9f84-ab025426c53b" />
   <p><em>Paywall Hardening & Content Protection</em></p>
 </div>
 
