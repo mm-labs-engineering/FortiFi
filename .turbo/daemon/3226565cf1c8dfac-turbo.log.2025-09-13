@@ -250,3 +250,25 @@
 2025-09-13T21:46:48.756363Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2025-09-13T21:46:52.856344Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("README.md")}
 2025-09-13T21:46:52.856355Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:48:46.258569Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:48:46.258600Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:48:48.956403Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:48:48.956414Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:48:58.357104Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:48:58.357126Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:49:00.056714Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:49:00.056725Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:49:00.056767Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:49:37.456540Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:49:37.456550Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:49:42.357957Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:49:42.357963Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:49:46.558284Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:49:46.558301Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:49:48.457188Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html"), AnchoredSystemPathBuf("examples/demo/src/views/article.html")}
+2025-09-13T21:49:48.457200Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:49:48.457215Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:49:59.357190Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("assets/logo.svg")}
+2025-09-13T21:49:59.357206Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:49:59.557124Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("assets/logo.svg")}
+2025-09-13T21:49:59.557131Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
