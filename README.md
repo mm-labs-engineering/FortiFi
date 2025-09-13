@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.svg" alt="FortiFi Logo" width="200" height="80">
+  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgMjAwIDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDwhLS0gU2hpZWxkIGJhY2tncm91bmQgLS0+CiAgPHBhdGggZD0iTTIwIDE1IEwyMCAyNSBDMjAgMzUsIDMwIDQ1LCA1MCA1MCBDNzAgNDUsIDgwIDM1LCA4MCAyNSBMODAgMTUgQzgwIDEwLCA3NSA1LCA3MCA1IEwzMCA1IEMyNSA1LCAyMCAxMCwgMjAgMTUgWiIgCiAgICAgICAgZmlsbD0iIzRDQUY1MCIgCiAgICAgICAgc3Ryb2tlPSIjNDVhMDQ5IiAKICAgICAgICBzdHJva2Utd2lkdGg9IjEiLz4KICA8IS0tIEtleWhvbGUgLS0+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSIyNSIgcj0iOCIgZmlsbD0iIzIxMjEyMSIvPgogIDxyZWN0IHg9IjQ2IiB5PSIyNSIgd2lkdGg9IjgiIGhlaWdodD0iMTIiIGZpbGw9IiMyMTIxMjEiLz4KICA8cmVjdCB4PSI0NCIgeT0iMzUiIHdpZHRoPSIxMiIgaGVpZ2h0PSIzIiBmaWxsPSIjMjEyMTIxIi8+CiAgPCEtLSBUZXh0IC0tPgogIDx0ZXh0IHg9IjEwMCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMyMTIxMjEiPkZvcnRpRmk8L3RleHQ+Cjwvc3ZnPg==" alt="FortiFi Logo" width="200" height="80">
   <h1>🛡️ FortiFi</h1>
   <p><em>Paywall Hardening & Content Protection</em></p>
 </div>

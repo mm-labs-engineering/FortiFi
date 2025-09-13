@@ -281,3 +281,15 @@
 2025-09-13T21:50:40.557183Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2025-09-13T21:50:43.857720Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
 2025-09-13T21:50:43.857729Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:50:55.258580Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/README.md"), AnchoredSystemPathBuf("README.md"), AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:50:55.258587Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:50:55.258600Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:50:56.458836Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("README.md"), AnchoredSystemPathBuf("docs/README.md"), AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:50:56.458848Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:50:56.482329Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T21:52:10.159265Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("README.md")}
+2025-09-13T21:52:10.159444Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:52:17.658678Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("docs/README.md")}
+2025-09-13T21:52:17.658685Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:52:25.058824Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:52:25.058839Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))

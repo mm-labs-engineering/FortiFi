@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.svg" alt="FortiFi Logo" width="150" height="60">
+  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMjAwIDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0yMCAxNSBMMjAgMjUgQzIwIDM1LCAzMCA0NSwgNTAgNTAgQzcwIDQ1LCA4MCAzNSwgODAgMjUgTDgwIDE1IEM4MCAxMCwgNzUgNSwgNzAgNSBMMzAgNSBDMjUgNSwgMjAgMTAsIDIwIDE1IFoiIGZpbGw9IiM0Q0FGNTAiIHN0cm9rZT0iIzQ1YTA0OSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSIyNSIgcj0iOCIgZmlsbD0iIzIxMjEyMSIvPgogIDxyZWN0IHg9IjQ2IiB5PSIyNSIgd2lkdGg9IjgiIGhlaWdodD0iMTIiIGZpbGw9IiMyMTIxMjEiLz4KICA8cmVjdCB4PSI0NCIgeT0iMzUiIHdpZHRoPSIxMiIgaGVpZ2h0PSIzIiBmaWxsPSIjMjEyMTIxIi8+CiAgPHRleHQgeD0iMTAwIiB5PSIzNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzIxMjEyMSI+Rm9ydGlGaTwvdGV4dD4KPC9zdmc+" alt="FortiFi Logo" width="150" height="60">
   <h1>🛡️ FortiFi Documentation</h1>
 </div>
 
