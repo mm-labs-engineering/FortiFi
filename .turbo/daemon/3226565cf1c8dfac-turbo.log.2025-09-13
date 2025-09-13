@@ -334,3 +334,6 @@
 2025-09-13T21:57:40.360578Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2025-09-13T21:58:17.561253Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("README.md")}
 2025-09-13T21:58:17.561262Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T21:58:32.363115Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/views/index.html")}
+2025-09-13T21:58:32.363142Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T21:58:32.363159Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
