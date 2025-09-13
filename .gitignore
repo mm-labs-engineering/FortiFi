@@ -114,3 +114,5 @@ Thumbs.db
 
 # Redis dump
 dump.rdb
+
+.turbo/

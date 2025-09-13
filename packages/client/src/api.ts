@@ -37,7 +37,7 @@ export class FortiFiAPI {
     const response = await this.makeRequest(`/api/article/${this.config.articleId}`, {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${token}`,
+        Authorization: `Bearer ${token}`,
       },
     });
 
@@ -62,13 +62,13 @@ export class FortiFiAPI {
   private async makeRequest(url: string, options: RequestInit): Promise<Response> {
     try {
       const fullUrl = `${this.config.apiUrl}${url}`;
-      
+
       if (this.config.debug) {
         console.log(`[FortiFi] Making request to: ${fullUrl}`, options);
       }
 
       const response = await fetch(fullUrl, options);
-      
+
       if (this.config.debug) {
         console.log(`[FortiFi] Response status: ${response.status}`, response);
       }
@@ -88,7 +88,7 @@ export class FortiFiAPI {
   private parseRateLimitHeaders(response: Response): { resetTime: number } {
     const retryAfter = response.headers.get('Retry-After');
     const resetTime = retryAfter ? parseInt(retryAfter, 10) : 60;
-    
+
     return { resetTime };
   }
 }

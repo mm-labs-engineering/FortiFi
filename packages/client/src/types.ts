@@ -59,7 +59,7 @@ export interface ErrorResponse {
   /** Error code */
   code?: string;
   /** Additional error details */
-  details?: any;
+  details?: unknown;
 }
 
 export interface RateLimitInfo {

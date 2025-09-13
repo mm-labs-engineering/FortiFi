@@ -39,7 +39,7 @@ jest.mock('@prisma/client', () => {
     },
     $disconnect: jest.fn(),
   };
-  
+
   return {
     PrismaClient: jest.fn(() => mockPrisma),
   };

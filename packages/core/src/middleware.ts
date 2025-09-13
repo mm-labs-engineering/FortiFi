@@ -3,7 +3,7 @@ import { FastifyRequest, FastifyReply } from 'fastify';
 import { RedisClient } from './redis';
 import { RateLimiter } from './rate-limiter';
 import { JWTManager } from './jwt';
-import { FortiFiConfig, TokenPayload, RateLimitInfo } from './types';
+import { FortiFiConfig, TokenPayload, RateLimitInfo, ExpressRequest } from './types';
 
 export class FortiFiMiddleware {
   private redis: RedisClient;
@@ -43,8 +43,8 @@ export class FortiFiMiddleware {
     }
 
     // Attach token info to request
-    (req as any).fortifi = {
-      ...(req as any).fortifi,
+    (req as ExpressRequest).fortifi = {
+      ...(req as ExpressRequest).fortifi,
       token: payload,
     };
 
@@ -56,8 +56,8 @@ export class FortiFiMiddleware {
     const rateLimitInfo = await this.rateLimiter.checkRateLimit(ip);
 
     // Attach rate limit info to request
-    (req as any).fortifi = {
-      ...(req as any).fortifi,
+    (req as ExpressRequest).fortifi = {
+      ...(req as ExpressRequest).fortifi,
       rateLimitInfo,
     };
 
@@ -83,8 +83,10 @@ export class FortiFiMiddleware {
     // CORS headers
     if (this.config.security.enableCors) {
       const origin = req.headers.origin;
-      if (this.config.security.corsOrigins.includes('*') || 
-          (origin && this.config.security.corsOrigins.includes(origin))) {
+      if (
+        this.config.security.corsOrigins.includes('*') ||
+        (origin && this.config.security.corsOrigins.includes(origin))
+      ) {
         res.set('Access-Control-Allow-Origin', origin || '*');
       }
       res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
@@ -121,8 +123,8 @@ export class FortiFiMiddleware {
     }
 
     // Attach token info to request
-    (request as any).fortifi = {
-      ...(request as any).fortifi,
+    (request as ExpressRequest).fortifi = {
+      ...(request as ExpressRequest).fortifi,
       token: payload,
     };
   };
@@ -132,8 +134,8 @@ export class FortiFiMiddleware {
     const rateLimitInfo = await this.rateLimiter.checkRateLimit(ip);
 
     // Attach rate limit info to request
-    (request as any).fortifi = {
-      ...(request as any).fortifi,
+    (request as ExpressRequest).fortifi = {
+      ...(request as ExpressRequest).fortifi,
       rateLimitInfo,
     };
 
@@ -147,16 +149,24 @@ export class FortiFiMiddleware {
 
     // Add rate limit headers
     reply.header('X-RateLimit-Limit', rateLimitInfo.limit.toString());
-    reply.header('X-RateLimit-Remaining', Math.max(0, rateLimitInfo.limit - rateLimitInfo.count).toString());
-    reply.header('X-RateLimit-Reset', new Date(Date.now() + rateLimitInfo.resetTime * 1000).toISOString());
+    reply.header(
+      'X-RateLimit-Remaining',
+      Math.max(0, rateLimitInfo.limit - rateLimitInfo.count).toString()
+    );
+    reply.header(
+      'X-RateLimit-Reset',
+      new Date(Date.now() + rateLimitInfo.resetTime * 1000).toISOString()
+    );
   };
 
   securityFastify = async (request: FastifyRequest, reply: FastifyReply): Promise<void> => {
     // CORS headers
     if (this.config.security.enableCors) {
       const origin = request.headers.origin;
-      if (this.config.security.corsOrigins.includes('*') || 
-          (origin && this.config.security.corsOrigins.includes(origin))) {
+      if (
+        this.config.security.corsOrigins.includes('*') ||
+        (origin && this.config.security.corsOrigins.includes(origin))
+      ) {
         reply.header('Access-Control-Allow-Origin', origin || '*');
       }
       reply.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');

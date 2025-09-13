@@ -347,3 +347,279 @@
 2025-09-13T22:02:25.063847Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2025-09-13T22:02:25.463894Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".husky/_/husky.sh"), AnchoredSystemPathBuf(".husky/_/.gitignore"), AnchoredSystemPathBuf("packages/cloud/package.json.1202156475"), AnchoredSystemPathBuf("packages/cloud/package.json")}
 2025-09-13T22:02:25.463910Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:10:40.968113Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/config.ts")}
+2025-09-13T22:10:40.968136Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:10:43.568148Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/config.ts")}
+2025-09-13T22:10:43.568158Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:10:49.067844Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:10:49.067853Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:10:51.467457Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:10:51.467467Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:10:58.368855Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:10:58.368872Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:03.768707Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:11:03.768715Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:08.167628Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:11:08.167642Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:10.868783Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:11:10.868796Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:13.368634Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/types.ts")}
+2025-09-13T22:11:13.368655Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:19.068349Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:11:19.068358Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:20.869129Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:11:20.869136Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:22.668105Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:11:22.668112Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:24.368610Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:11:24.368617Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:26.970146Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:11:26.970157Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:27.069130Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:11:27.069137Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:27.069152Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:11:29.168596Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:11:29.168605Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:30.868280Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:11:30.868294Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:34.168569Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:11:34.168580Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:38.968357Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:11:38.968377Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:41.770951Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:11:41.770966Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:43.868724Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:11:43.868746Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:45.968257Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:11:45.968265Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:49.768547Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:11:49.768564Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:54.668689Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:11:54.668706Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:11:57.968838Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:11:57.968849Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:00.468325Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:12:00.468337Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:04.168667Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:12:04.168675Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:06.168504Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/types.ts")}
+2025-09-13T22:12:06.168515Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:11.069332Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("_tmp_80454_25a752260b827e04a852b828ab676dbe")}
+2025-09-13T22:12:11.069343Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:11.269193Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("")}
+2025-09-13T22:12:11.269205Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({}))
+2025-09-13T22:12:11.768873Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".husky/_/.gitignore"), AnchoredSystemPathBuf(".husky/_/husky.sh")}
+2025-09-13T22:12:11.768880Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:14.869158Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/27.cookie")}
+2025-09-13T22:12:14.869165Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:14.969587Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/28.cookie"), AnchoredSystemPathBuf(".turbo/cookies/33.cookie"), AnchoredSystemPathBuf(".turbo/cookies/31.cookie"), AnchoredSystemPathBuf("packages/client/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/32.cookie"), AnchoredSystemPathBuf(".turbo/cookies/30.cookie"), AnchoredSystemPathBuf(".turbo/cookies/29.cookie"), AnchoredSystemPathBuf("packages/core/.turbo")}
+2025-09-13T22:12:14.969605Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T22:12:14.969638Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:12:14.969659Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:12:16.169226Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/34.cookie")}
+2025-09-13T22:12:16.169237Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:18.768695Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/35.cookie")}
+2025-09-13T22:12:18.768703Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:18.869483Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/39.cookie"), AnchoredSystemPathBuf(".turbo/cookies/38.cookie"), AnchoredSystemPathBuf(".turbo/cookies/37.cookie"), AnchoredSystemPathBuf(".turbo/cookies/36.cookie")}
+2025-09-13T22:12:18.869499Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:21.368600Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:12:21.368607Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:23.268411Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:12:23.268419Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:27.669494Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:12:27.669503Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:30.068157Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/package.json")}
+2025-09-13T22:12:30.068205Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:12:30.168806Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:12:30.168813Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:32.469166Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:12:32.469173Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:33.069290Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/package.json")}
+2025-09-13T22:12:33.069297Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T22:12:34.869360Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:12:34.869376Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:35.469707Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/package.json")}
+2025-09-13T22:12:35.469726Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T22:12:36.768969Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:12:36.768977Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:38.769416Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:12:38.769427Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:40.071374Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_81654_f99d5e09fa12c0ac41f7a0042ca134fc"), AnchoredSystemPathBuf("")}
+2025-09-13T22:12:40.071393Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:40.468796Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:12:40.468808Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:42.276543Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml"), AnchoredSystemPathBuf("pnpm-lock.yaml.12793113")}
+2025-09-13T22:12:42.276555Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:42.381040Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:12:42.381048Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:42.668677Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".husky/_/.gitignore"), AnchoredSystemPathBuf(".husky/_/husky.sh")}
+2025-09-13T22:12:42.668684Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:12:44.469186Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:12:44.469194Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:46.369493Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:12:46.369509Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:48.369430Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:12:48.369442Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:50.468915Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:12:50.468923Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:52.368740Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:12:52.368749Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:12:54.369727Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:12:54.369737Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:01.569035Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/42.cookie"), AnchoredSystemPathBuf(".turbo/cookies/40.cookie"), AnchoredSystemPathBuf(".turbo/cookies/41.cookie")}
+2025-09-13T22:13:01.569045Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:13:02.868530Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/43.cookie")}
+2025-09-13T22:13:02.868538Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:13:02.969196Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/44.cookie")}
+2025-09-13T22:13:02.969210Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:13:04.069186Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/51.cookie"), AnchoredSystemPathBuf(".turbo/cookies/47.cookie"), AnchoredSystemPathBuf(".turbo/cookies/46.cookie"), AnchoredSystemPathBuf(".turbo/cookies/45.cookie"), AnchoredSystemPathBuf(".turbo/cookies/48.cookie"), AnchoredSystemPathBuf(".turbo/cookies/49.cookie"), AnchoredSystemPathBuf(".turbo/cookies/50.cookie")}
+2025-09-13T22:13:04.069200Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:13:08.069187Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:13:08.069200Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:10.168591Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:13:10.168598Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:12.169733Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:13:12.169746Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:14.068924Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:13:14.068934Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:15.969689Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:13:15.969699Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:17.869187Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:13:17.869194Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:19.868968Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:13:19.868982Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:22.069886Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts")}
+2025-09-13T22:13:22.069897Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:24.068349Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:13:24.068356Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:26.269905Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:13:26.269918Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:39.969101Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/52.cookie")}
+2025-09-13T22:13:39.969109Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:13:40.068820Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/57.cookie"), AnchoredSystemPathBuf(".turbo/cookies/58.cookie"), AnchoredSystemPathBuf(".turbo/cookies/54.cookie"), AnchoredSystemPathBuf("packages/client/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/53.cookie"), AnchoredSystemPathBuf(".turbo/cookies/55.cookie"), AnchoredSystemPathBuf(".turbo/cookies/56.cookie")}
+2025-09-13T22:13:40.068831Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }, WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T22:13:40.068849Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:13:40.068931Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:13:41.068461Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/59.cookie")}
+2025-09-13T22:13:41.068471Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:13:41.569211Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/60.cookie")}
+2025-09-13T22:13:41.569221Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:13:50.069272Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts"), AnchoredSystemPathBuf("packages/cloud/src/config.ts"), AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts"), AnchoredSystemPathBuf("packages/cloud/src/types.ts"), AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts"), AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts")}
+2025-09-13T22:13:50.069289Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:13:50.165308Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:14:00.369524Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".eslintrc.js")}
+2025-09-13T22:14:00.369531Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:08.969653Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".eslintrc.js")}
+2025-09-13T22:14:08.969663Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:12.170456Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/61.cookie")}
+2025-09-13T22:14:12.170472Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:12.269725Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/64.cookie"), AnchoredSystemPathBuf(".turbo/cookies/65.cookie"), AnchoredSystemPathBuf(".turbo/cookies/62.cookie"), AnchoredSystemPathBuf(".turbo/cookies/63.cookie")}
+2025-09-13T22:14:12.269744Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:21.168888Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/66.cookie")}
+2025-09-13T22:14:21.168896Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:21.270363Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/69.cookie"), AnchoredSystemPathBuf(".turbo/cookies/70.cookie"), AnchoredSystemPathBuf(".turbo/cookies/67.cookie"), AnchoredSystemPathBuf(".turbo/cookies/68.cookie")}
+2025-09-13T22:14:21.270379Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:22.471372Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T22:14:22.471387Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T22:14:26.369108Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T22:14:26.369115Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T22:14:28.269974Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("examples/demo/src/server.ts")}
+2025-09-13T22:14:28.270007Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T22:14:42.070105Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_86361_6b359899269f08008905990d3fd00540"), AnchoredSystemPathBuf("")}
+2025-09-13T22:14:42.070115Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:43.571424Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("")}
+2025-09-13T22:14:43.571436Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({}))
+2025-09-13T22:14:43.769736Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml"), AnchoredSystemPathBuf("package.json"), AnchoredSystemPathBuf("package.json.1365384161"), AnchoredSystemPathBuf("pnpm-lock.yaml.1513283779")}
+2025-09-13T22:14:43.769747Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-09-13T22:14:48.169163Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/71.cookie"), AnchoredSystemPathBuf(".turbo/cookies/73.cookie"), AnchoredSystemPathBuf(".turbo/cookies/75.cookie"), AnchoredSystemPathBuf(".turbo/cookies/72.cookie"), AnchoredSystemPathBuf(".turbo/cookies/74.cookie")}
+2025-09-13T22:14:48.169185Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:49.770724Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/76.cookie")}
+2025-09-13T22:14:49.770748Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:55.069249Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/78.cookie"), AnchoredSystemPathBuf(".turbo/cookies/77.cookie"), AnchoredSystemPathBuf(".turbo/cookies/79.cookie"), AnchoredSystemPathBuf(".turbo/cookies/80.cookie"), AnchoredSystemPathBuf(".turbo/cookies/81.cookie")}
+2025-09-13T22:14:55.069273Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:56.269524Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/82.cookie")}
+2025-09-13T22:14:56.269541Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:14:56.370195Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/src/client.ts"), AnchoredSystemPathBuf("packages/client/src/api.ts"), AnchoredSystemPathBuf("packages/client/src/dom.ts")}
+2025-09-13T22:14:56.370212Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T22:15:00.170559Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/src/client.ts")}
+2025-09-13T22:15:00.170568Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T22:15:03.369147Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/src/client.ts")}
+2025-09-13T22:15:03.369158Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T22:15:06.570776Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/src/types.ts")}
+2025-09-13T22:15:06.570788Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }}))
+2025-09-13T22:15:09.870295Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/84.cookie"), AnchoredSystemPathBuf(".turbo/cookies/86.cookie"), AnchoredSystemPathBuf(".turbo/cookies/87.cookie"), AnchoredSystemPathBuf(".turbo/cookies/88.cookie"), AnchoredSystemPathBuf("examples/demo/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/83.cookie"), AnchoredSystemPathBuf(".turbo/cookies/85.cookie")}
+2025-09-13T22:15:09.870307Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T22:15:09.870332Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:15:11.072014Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/89.cookie")}
+2025-09-13T22:15:11.072023Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:15:16.770671Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/__tests__/jwt.test.ts"), AnchoredSystemPathBuf("packages/core/src/__tests__/setup.ts"), AnchoredSystemPathBuf("packages/core/src/middleware.ts"), AnchoredSystemPathBuf("packages/core/src/rate-limiter.ts"), AnchoredSystemPathBuf("packages/core/src/redis.ts")}
+2025-09-13T22:15:16.770685Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:15:29.269427Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/middleware.ts")}
+2025-09-13T22:15:29.269438Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:15:32.970585Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/middleware.ts")}
+2025-09-13T22:15:32.970593Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:15:36.670403Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/middleware.ts")}
+2025-09-13T22:15:36.670413Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:15:39.570594Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/middleware.ts")}
+2025-09-13T22:15:39.570608Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:15:43.070448Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/redis.ts")}
+2025-09-13T22:15:43.070456Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:15:48.370444Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/types.ts")}
+2025-09-13T22:15:48.370453Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:15:53.970937Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/types.ts")}
+2025-09-13T22:15:53.970945Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:16:26.671094Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/93.cookie"), AnchoredSystemPathBuf(".turbo/cookies/91.cookie"), AnchoredSystemPathBuf(".turbo/cookies/94.cookie"), AnchoredSystemPathBuf(".turbo/cookies/90.cookie"), AnchoredSystemPathBuf(".turbo/cookies/95.cookie"), AnchoredSystemPathBuf(".turbo/cookies/92.cookie")}
+2025-09-13T22:16:26.671116Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:16:26.691147Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:16:28.171064Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/96.cookie")}
+2025-09-13T22:16:28.171111Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:16:51.971386Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/services/rate-limit.service.ts"), AnchoredSystemPathBuf("packages/cloud/src/config.ts"), AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts"), AnchoredSystemPathBuf("packages/cloud/src/routes/token.routes.ts"), AnchoredSystemPathBuf("packages/cloud/src/types.ts"), AnchoredSystemPathBuf("packages/cloud/src/__tests__/setup.ts"), AnchoredSystemPathBuf("packages/cloud/src/index.ts"), AnchoredSystemPathBuf("packages/cloud/src/routes/watermark.routes.ts"), AnchoredSystemPathBuf("packages/cloud/src/services/watermark.service.ts")}
+2025-09-13T22:16:51.971399Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:16:55.871654Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:16:55.871664Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:16:56.670941Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/index.ts")}
+2025-09-13T22:16:56.670955Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:17:01.170937Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/services/article.service.ts")}
+2025-09-13T22:17:01.170945Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:17:08.171621Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/types.ts")}
+2025-09-13T22:17:08.171635Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:17:10.870953Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/types.ts")}
+2025-09-13T22:17:10.870963Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:17:11.671164Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/services/watermark.service.ts")}
+2025-09-13T22:17:11.671172Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:17:12.371383Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/services/article.service.ts")}
+2025-09-13T22:17:12.371390Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:17:19.171671Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:17:19.171681Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:17:22.771021Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/cloud/src/config.ts")}
+2025-09-13T22:17:22.771031Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }}))
+2025-09-13T22:17:26.971529Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/97.cookie")}
+2025-09-13T22:17:26.971541Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:17:27.071664Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/101.cookie"), AnchoredSystemPathBuf(".turbo/cookies/102.cookie"), AnchoredSystemPathBuf(".turbo/cookies/100.cookie"), AnchoredSystemPathBuf(".turbo/cookies/99.cookie"), AnchoredSystemPathBuf("packages/core/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/98.cookie")}
+2025-09-13T22:17:27.071673Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:17:27.071685Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:28.170896Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/103.cookie")}
+2025-09-13T22:17:28.170904Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:17:32.870388Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/types.ts")}
+2025-09-13T22:17:32.870399Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-09-13T22:17:39.171313Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/107.cookie"), AnchoredSystemPathBuf(".turbo/cookies/108.cookie"), AnchoredSystemPathBuf(".turbo/cookies/105.cookie"), AnchoredSystemPathBuf(".turbo/cookies/109.cookie"), AnchoredSystemPathBuf("packages/cloud/.turbo"), AnchoredSystemPathBuf(".turbo/cookies/104.cookie"), AnchoredSystemPathBuf(".turbo/cookies/106.cookie")}
+2025-09-13T22:17:39.171322Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:17:39.171340Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:40.270985Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/110.cookie")}
+2025-09-13T22:17:40.270996Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:17:48.470368Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/middleware.ts"), AnchoredSystemPathBuf("packages/cloud/src/index.ts"), AnchoredSystemPathBuf("packages/cloud/src/services/article.service.ts"), AnchoredSystemPathBuf("packages/client/package.json"), AnchoredSystemPathBuf("packages/cloud/src/services/watermark.service.ts"), AnchoredSystemPathBuf("examples/demo/package.json"), AnchoredSystemPathBuf("packages/cloud/src/types.ts"), AnchoredSystemPathBuf("packages/client/src/client.ts"), AnchoredSystemPathBuf("packages/core/src/redis.ts"), AnchoredSystemPathBuf("packages/cloud/src/config.ts"), AnchoredSystemPathBuf("packages/core/package.json"), AnchoredSystemPathBuf("packages/core/src/types.ts"), AnchoredSystemPathBuf(".eslintrc.js"), AnchoredSystemPathBuf("examples/demo/src/server.ts"), AnchoredSystemPathBuf("packages/client/src/types.ts"), AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts")}
+2025-09-13T22:17:48.470386Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }, WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }, WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T22:17:48.489985Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:48.490001Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:48.527451Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:48.527463Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:48.571853Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/client/package.json"), AnchoredSystemPathBuf("packages/cloud/src/routes/article.routes.ts"), AnchoredSystemPathBuf("packages/client/src/client.ts"), AnchoredSystemPathBuf("packages/cloud/src/config.ts"), AnchoredSystemPathBuf(".eslintrc.js"), AnchoredSystemPathBuf("packages/cloud/src/services/watermark.service.ts"), AnchoredSystemPathBuf("packages/core/src/redis.ts"), AnchoredSystemPathBuf("packages/cloud/src/services/article.service.ts"), AnchoredSystemPathBuf("packages/core/src/types.ts"), AnchoredSystemPathBuf("examples/demo/src/server.ts"), AnchoredSystemPathBuf("packages/client/src/types.ts"), AnchoredSystemPathBuf("packages/core/src/middleware.ts"), AnchoredSystemPathBuf("packages/cloud/src/types.ts"), AnchoredSystemPathBuf("packages/cloud/src/index.ts"), AnchoredSystemPathBuf("examples/demo/package.json")}
+2025-09-13T22:17:48.571865Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@fortifi/cloud"), path: AnchoredSystemPathBuf("packages/cloud") }, WorkspacePackage { name: Other("@fortifi/client"), path: AnchoredSystemPathBuf("packages/client") }, WorkspacePackage { name: Other("@fortifi/core"), path: AnchoredSystemPathBuf("packages/core") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@fortifi/demo"), path: AnchoredSystemPathBuf("examples/demo") }}))
+2025-09-13T22:17:48.571938Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:48.571953Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:48.571959Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:17:48.571966Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-13T22:23:35.809585Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/29.cookie")}
+2025-09-13T22:23:35.809613Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-13T22:24:05.109418Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".gitignore")}
+2025-09-13T22:24:05.109429Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))

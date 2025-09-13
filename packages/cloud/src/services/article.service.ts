@@ -1,6 +1,5 @@
 import { PrismaClient } from '@prisma/client';
 import { ArticleService, ArticleResponse, DatabaseArticle } from '../types';
-import { config } from '../config';
 
 export class ArticleServiceImpl implements ArticleService {
   constructor(private prisma: PrismaClient) {}
@@ -134,7 +133,7 @@ export class ArticleServiceImpl implements ArticleService {
   }
 
   private extractAssets(article: DatabaseArticle): ArticleResponse['assets'] {
-    const metadata = article.metadata as any;
+    const metadata = article.metadata as Record<string, unknown>;
     if (!metadata || typeof metadata !== 'object') {
       return undefined;
     }

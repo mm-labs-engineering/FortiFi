@@ -8,9 +8,11 @@ import { PrismaClient } from '@prisma/client';
 import { config } from './config';
 import { tokenRoutes } from './routes/token.routes';
 import { articleRoutes } from './routes/article.routes';
+import { watermarkRoutes } from './routes/watermark.routes';
 import { ArticleServiceImpl } from './services/article.service';
 import { TokenServiceImpl } from './services/token.service';
 import { RateLimitServiceImpl } from './services/rate-limit.service';
+import { WatermarkServiceImpl } from './services/watermark.service';
 
 // Initialize Prisma client
 const prisma = new PrismaClient({
@@ -21,18 +23,24 @@ const prisma = new PrismaClient({
 const articleService = new ArticleServiceImpl(prisma);
 const tokenService = new TokenServiceImpl(prisma);
 const rateLimitService = new RateLimitServiceImpl(prisma);
+const watermarkService = new WatermarkServiceImpl(prisma);
 
 // Create Fastify instance
 const fastify = Fastify({
-  logger: {
-    level: process.env.LOG_LEVEL || 'info',
-    transport: process.env.NODE_ENV === 'development' ? {
-      target: 'pino-pretty',
-      options: {
-        colorize: true,
-      },
-    } : undefined,
-  },
+  logger:
+    process.env['NODE_ENV'] === 'development'
+      ? {
+          level: process.env['LOG_LEVEL'] || 'info',
+          transport: {
+            target: 'pino-pretty',
+            options: {
+              colorize: true,
+            },
+          },
+        }
+      : {
+          level: process.env['LOG_LEVEL'] || 'info',
+        },
 });
 
 async function build() {
@@ -94,15 +102,15 @@ async function build() {
       },
     },
     staticCSP: true,
-    transformStaticCSP: (header) => header,
-    transformSpecification: (swaggerObject, request, reply) => {
+    transformStaticCSP: header => header,
+    transformSpecification: (swaggerObject, _request, _reply) => {
       return swaggerObject;
     },
     transformSpecificationClone: true,
   });
 
   // Health check endpoint
-  fastify.get('/health', async (request, reply) => {
+  fastify.get('/health', async (_request, _reply) => {
     return {
       status: 'ok',
       timestamp: new Date().toISOString(),
@@ -110,14 +118,21 @@ async function build() {
     };
   });
 
+  // Register services with fastify instance
+  fastify.decorate('articleService', articleService);
+  fastify.decorate('tokenService', tokenService);
+  fastify.decorate('rateLimitService', rateLimitService);
+  fastify.decorate('watermarkService', watermarkService);
+
   // Register routes
-  await fastify.register(tokenRoutes, { prefix: '' }, tokenService, rateLimitService);
-  await fastify.register(articleRoutes, { prefix: '' }, articleService, tokenService, rateLimitService);
+  await fastify.register(tokenRoutes, { prefix: '' });
+  await fastify.register(articleRoutes, { prefix: '' });
+  await fastify.register(watermarkRoutes, { prefix: '' });
 
   // Error handler
-  fastify.setErrorHandler((error, request, reply) => {
+  fastify.setErrorHandler((error: Error, request, reply) => {
     fastify.log.error(error);
-    
+
     reply.status(500).send({
       error: 'Internal server error',
       code: 'INTERNAL_ERROR',
@@ -127,13 +142,13 @@ async function build() {
   // Graceful shutdown
   const gracefulShutdown = async (signal: string) => {
     fastify.log.info(`Received ${signal}, shutting down gracefully...`);
-    
+
     try {
       await fastify.close();
       await prisma.$disconnect();
       process.exit(0);
     } catch (error) {
-      fastify.log.error('Error during shutdown:', error);
+      fastify.log.error({ error }, 'Error during shutdown');
       process.exit(1);
     }
   };
@@ -148,7 +163,7 @@ async function build() {
 async function start() {
   try {
     const app = await build();
-    
+
     await app.listen({
       port: config.port,
       host: config.host,

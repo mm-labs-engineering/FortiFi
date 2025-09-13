@@ -1,3 +1,5 @@
+import { Request, Response, NextFunction } from 'express';
+
 export interface FortiFiConfig {
   /** JWT secret for token signing and verification */
   jwtSecret: string;
@@ -95,11 +97,11 @@ export interface RateLimitInfo {
 
 export interface FortiFiMiddleware {
   /** Express middleware for token validation */
-  validateToken: (req: any, res: any, next: any) => void;
+  validateToken: (req: ExpressRequest, res: Response, next: NextFunction) => void;
   /** Express middleware for rate limiting */
-  rateLimit: (req: any, res: any, next: any) => void;
+  rateLimit: (req: ExpressRequest, res: Response, next: NextFunction) => void;
   /** Express middleware for security headers */
-  security: (req: any, res: any, next: any) => void;
+  security: (req: ExpressRequest, res: Response, next: NextFunction) => void;
   /** Generate JWT token for user/article */
   generateToken: (userId: string, articleId: string) => string;
   /** Verify JWT token */
@@ -130,4 +132,4 @@ export interface FastifyRequest extends Request {
   };
 }
 
-export type Request = any; // Will be properly typed based on framework
+export type Request = Record<string, unknown>; // Will be properly typed based on framework

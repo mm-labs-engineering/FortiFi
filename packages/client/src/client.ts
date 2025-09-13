@@ -1,4 +1,4 @@
-import { FortiFiClientConfig, ArticleContent, TokenResponse } from './types';
+import { FortiFiClientConfig } from './types';
 import { FortiFiAPI } from './api';
 import { FortiFiDOM } from './dom';
 
@@ -42,7 +42,6 @@ export class FortiFiClient {
       // Show CTA if no valid token
       this.dom.showCTA();
       this.dom.addCTAEventListener(() => this.handleCTAClick());
-
     } catch (error) {
       this.handleError(error as Error);
     }
@@ -68,7 +67,6 @@ export class FortiFiClient {
       }
 
       await this.loadContent();
-
     } catch (error) {
       this.handleError(error as Error);
     }
@@ -86,7 +84,7 @@ export class FortiFiClient {
       this.log('Loading article content...');
 
       const content = await this.api.fetchArticleContent(this.currentToken);
-      
+
       // Update DOM with content
       this.dom.updateContent(content);
       this.dom.hideCTA();
@@ -97,7 +95,6 @@ export class FortiFiClient {
       }
 
       this.log('Content loaded successfully');
-
     } catch (error) {
       this.handleError(error as Error);
     }
@@ -139,10 +136,13 @@ export class FortiFiClient {
    */
   private storeToken(token: string, expiresAt: number): void {
     try {
-      localStorage.setItem('fortifi_token', JSON.stringify({
-        token,
-        expiresAt,
-      }));
+      localStorage.setItem(
+        'fortifi_token',
+        JSON.stringify({
+          token,
+          expiresAt,
+        })
+      );
     } catch (error) {
       this.log('Failed to store token:', error);
     }
@@ -153,7 +153,7 @@ export class FortiFiClient {
    */
   private isTokenValid(token: string): boolean {
     if (!token) return false;
-    
+
     try {
       // Basic JWT structure check
       const parts = token.split('.');
@@ -162,7 +162,7 @@ export class FortiFiClient {
       // Decode payload to check expiration
       const payload = JSON.parse(atob(parts[1] || ''));
       const now = Math.floor(Date.now() / 1000);
-      
+
       return payload.exp && payload.exp > now;
     } catch {
       return false;
@@ -188,7 +188,7 @@ export class FortiFiClient {
   /**
    * Log debug messages
    */
-  private log(...args: any[]): void {
+  private log(...args: unknown[]): void {
     if (this.config.debug) {
       console.log('[FortiFi]', ...args);
     }

@@ -90,7 +90,7 @@ export class FortiFiDOM {
     ctaElement.id = 'paywall-cta';
     ctaElement.className = 'fortifi-paywall-cta';
     ctaElement.innerHTML = this.getDefaultCTATemplate();
-    
+
     // Insert after content element
     contentElement.parentNode?.insertBefore(ctaElement, contentElement.nextSibling);
   }
@@ -143,7 +143,7 @@ export class FortiFiDOM {
     this.updateMetaTag('article:author', metadata.author);
     this.updateMetaTag('article:published_time', metadata.publishedAt);
     this.updateMetaTag('article:section', metadata.category);
-    
+
     // Update keywords
     if (metadata.tags.length > 0) {
       this.updateMetaTag('keywords', metadata.tags.join(', '));
@@ -160,13 +160,13 @@ export class FortiFiDOM {
    */
   private updateMetaTag(name: string, content: string): void {
     let metaTag = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement;
-    
+
     if (!metaTag) {
       metaTag = document.createElement('meta');
       metaTag.name = name;
       document.head.appendChild(metaTag);
     }
-    
+
     metaTag.content = content;
   }
 

@@ -7,21 +7,21 @@ export class RedisClient {
 
   constructor(config: FortiFiConfig) {
     this.config = config;
-    const redisConfig: any = {
+    const redisConfig: Record<string, unknown> = {
       host: config.redis.host,
       port: config.redis.port,
       db: config.redis.db || 0,
       maxRetriesPerRequest: 3,
       lazyConnect: true,
     };
-    
+
     if (config.redis.password) {
       redisConfig.password = config.redis.password;
     }
-    
+
     this.client = new Redis(redisConfig);
 
-    this.client.on('error', (err) => {
+    this.client.on('error', err => {
       console.error('Redis connection error:', err);
     });
 

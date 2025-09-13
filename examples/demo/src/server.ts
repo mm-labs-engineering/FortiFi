@@ -32,17 +32,19 @@ const fortifi = createFortiFi({
 });
 
 // Middleware
-app.use(helmet({
-  contentSecurityPolicy: {
-    directives: {
-      defaultSrc: ["'self'"],
-      styleSrc: ["'self'", "'unsafe-inline'"],
-      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-hashes'"],
-      scriptSrcAttr: ["'unsafe-inline'"],
-      imgSrc: ["'self'", "data:", "https:"],
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-hashes'"],
+        scriptSrcAttr: ["'unsafe-inline'"],
+        imgSrc: ["'self'", 'data:', 'https:'],
+      },
     },
-  },
-}));
+  })
+);
 
 app.use(cors());
 app.use(express.json());
@@ -56,7 +58,8 @@ const articles = [
   {
     id: 'article-1',
     title: 'The Future of Web Security',
-    teaser: 'In this comprehensive guide, we explore the latest trends in web security and how they impact modern applications...',
+    teaser:
+      'In this comprehensive guide, we explore the latest trends in web security and how they impact modern applications...',
     content: `
       <h2>Introduction</h2>
       <p>Web security has evolved dramatically over the past decade. From simple password protection to sophisticated multi-factor authentication systems, the landscape continues to change rapidly.</p>
@@ -98,7 +101,8 @@ const articles = [
   {
     id: 'article-2',
     title: 'Understanding TypeScript Generics',
-    teaser: 'TypeScript generics provide a powerful way to create reusable components. Learn how to leverage them effectively...',
+    teaser:
+      'TypeScript generics provide a powerful way to create reusable components. Learn how to leverage them effectively...',
     content: `
       <h2>What are Generics?</h2>
       <p>Generics allow you to create reusable components that work with multiple types while maintaining type safety.</p>
@@ -143,51 +147,53 @@ app.get('/', (req, res) => {
 app.get('/article/:id', (req, res) => {
   const articleId = req.params['id'];
   const article = articles.find(a => a.id === articleId);
-  
+
   if (!article) {
     return res.status(404).send('Article not found');
   }
-  
+
   return res.sendFile(path.join(__dirname, 'views', 'article.html'));
 });
 
 // API Routes
 app.get('/api/articles', (req, res) => {
-  return res.json(articles.map(article => ({
-    id: article.id,
-    title: article.title,
-    teaser: article.teaser,
-    author: article.author,
-    publishedAt: article.publishedAt,
-    category: article.category,
-    tags: article.tags,
-    isPremium: article.isPremium,
-  })));
+  return res.json(
+    articles.map(article => ({
+      id: article.id,
+      title: article.title,
+      teaser: article.teaser,
+      author: article.author,
+      publishedAt: article.publishedAt,
+      category: article.category,
+      tags: article.tags,
+      isPremium: article.isPremium,
+    }))
+  );
 });
 
 app.get('/api/article/:id', (req, res) => {
   const articleId = req.params['id'];
   const article = articles.find(a => a.id === articleId);
-  
+
   if (!article) {
     return res.status(404).json({ error: 'Article not found' });
   }
-  
+
   return res.json(article);
 });
 
 // Token endpoint (simplified for demo)
 app.post('/api/token', (req, res) => {
   const { articleId, userId } = req.body;
-  
+
   if (!articleId || !userId) {
     return res.status(400).json({ error: 'Article ID and User ID are required' });
   }
-  
+
   // Generate token using FortiFi
   const token = fortifi.generateToken(userId, articleId);
   const expiresAt = Math.floor(Date.now() / 1000) + 60; // 60 seconds from now
-  
+
   return res.json({
     token,
     expiresAt,
@@ -200,15 +206,15 @@ app.post('/api/token', (req, res) => {
 app.get('/api/article/:id/content', (req, res) => {
   const articleId = req.params['id'];
   const article = articles.find(a => a.id === articleId);
-  
+
   if (!article) {
     return res.status(404).json({ error: 'Article not found' });
   }
-  
+
   // Check for token in Authorization header or query parameter
   const authHeader = req.headers.authorization;
   const tokenFromQuery = req.query['token'] as string;
-  
+
   if (authHeader && authHeader.startsWith('Bearer ')) {
     const token = authHeader.substring(7);
     try {
@@ -233,7 +239,7 @@ app.get('/api/article/:id/content', (req, res) => {
   } else {
     return res.status(401).json({ error: 'Token required' });
   }
-  
+
   return res.json({
     id: article.id,
     title: article.title,
@@ -248,7 +254,7 @@ app.get('/api/article/:id/content', (req, res) => {
 });
 
 // Error handling
-app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
+app.use((err: Error, req: express.Request, res: express.Response, _next: express.NextFunction) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Something went wrong!' });
 });

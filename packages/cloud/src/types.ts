@@ -16,10 +16,12 @@ export const ArticleResponseSchema = z.object({
     tags: z.array(z.string()),
     category: z.string().optional(),
   }),
-  assets: z.object({
-    pdf: z.string().optional(),
-    images: z.array(z.string()).optional(),
-  }).optional(),
+  assets: z
+    .object({
+      pdf: z.string().optional(),
+      images: z.array(z.string()).optional(),
+    })
+    .optional(),
 });
 
 export const ErrorResponseSchema = z.object({
@@ -96,7 +98,7 @@ export interface RateLimitService {
 export interface WatermarkService {
   createWatermarkJob(articleId: string, userId: string, assetUrl: string): Promise<string>;
   processWatermarkJob(jobId: string): Promise<void>;
-  getWatermarkJob(jobId: string): Promise<any>;
+  getWatermarkJob(jobId: string): Promise<unknown>;
 }
 
 // Database types
@@ -119,7 +121,7 @@ export interface DatabaseArticle {
   category: string | null;
   tags: string[];
   isPremium: boolean;
-  metadata: any;
+  metadata: Record<string, unknown>;
   createdAt: Date;
   updatedAt: Date;
   userId: string;
@@ -141,5 +143,12 @@ declare module 'fastify' {
     user?: DatabaseUser;
     article?: DatabaseArticle;
     rateLimitInfo?: RateLimitResponse;
+  }
+
+  interface FastifyInstance {
+    articleService: ArticleService;
+    tokenService: TokenService;
+    rateLimitService: RateLimitService;
+    watermarkService: WatermarkService;
   }
 }

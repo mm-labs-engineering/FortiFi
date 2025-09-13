@@ -34,9 +34,9 @@ describe('JWTManager', () => {
     it('should generate a valid JWT token', () => {
       const userId = 'user123';
       const articleId = 'article456';
-      
+
       const token = jwtManager.generateToken(userId, articleId);
-      
+
       expect(token).toBeDefined();
       expect(typeof token).toBe('string');
       expect(token.split('.')).toHaveLength(3); // JWT has 3 parts
@@ -45,10 +45,10 @@ describe('JWTManager', () => {
     it('should include correct payload in token', () => {
       const userId = 'user123';
       const articleId = 'article456';
-      
+
       const token = jwtManager.generateToken(userId, articleId);
       const decoded = jwtManager.decodeToken(token);
-      
+
       expect(decoded).toBeDefined();
       expect(decoded?.userId).toBe(userId);
       expect(decoded?.articleId).toBe(articleId);
@@ -62,10 +62,10 @@ describe('JWTManager', () => {
     it('should verify a valid token', () => {
       const userId = 'user123';
       const articleId = 'article456';
-      
+
       const token = jwtManager.generateToken(userId, articleId);
       const payload = jwtManager.verifyToken(token);
-      
+
       expect(payload).toBeDefined();
       expect(payload?.userId).toBe(userId);
       expect(payload?.articleId).toBe(articleId);
@@ -74,7 +74,7 @@ describe('JWTManager', () => {
     it('should return null for invalid token', () => {
       const invalidToken = 'invalid.token.here';
       const payload = jwtManager.verifyToken(invalidToken);
-      
+
       expect(payload).toBeNull();
     });
 
@@ -82,9 +82,9 @@ describe('JWTManager', () => {
       // Create a token with very short TTL
       const shortConfig = { ...config, token: { ...config.token, ttl: 0.001 } }; // 1ms
       const shortJwtManager = new JWTManager(shortConfig);
-      
+
       const token = shortJwtManager.generateToken('user123', 'article456');
-      
+
       // Wait for token to expire
       setTimeout(() => {
         const payload = shortJwtManager.verifyToken(token);
@@ -97,9 +97,9 @@ describe('JWTManager', () => {
     it('should detect expired token', () => {
       const shortConfig = { ...config, token: { ...config.token, ttl: 0.001 } }; // 1ms
       const shortJwtManager = new JWTManager(shortConfig);
-      
+
       const token = shortJwtManager.generateToken('user123', 'article456');
-      
+
       setTimeout(() => {
         const isExpired = shortJwtManager.isTokenExpired(token);
         expect(isExpired).toBe(true);
@@ -109,7 +109,7 @@ describe('JWTManager', () => {
     it('should detect valid token as not expired', () => {
       const token = jwtManager.generateToken('user123', 'article456');
       const isExpired = jwtManager.isTokenExpired(token);
-      
+
       expect(isExpired).toBe(false);
     });
   });

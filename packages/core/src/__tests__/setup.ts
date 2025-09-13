@@ -16,7 +16,7 @@ jest.mock('ioredis', () => {
     ttl: jest.fn().mockResolvedValue(60),
     on: jest.fn(),
   };
-  
+
   return jest.fn(() => mockRedis);
 });
 

@@ -44,7 +44,9 @@ export class RateLimitServiceImpl implements RateLimitService {
     }
 
     const exceeded = rateLimit.count > config.rateLimit.maxRequests;
-    const resetTime = Math.ceil((rateLimit.windowEnd.getTime() + config.rateLimit.windowMs - now.getTime()) / 1000);
+    const resetTime = Math.ceil(
+      (rateLimit.windowEnd.getTime() + config.rateLimit.windowMs - now.getTime()) / 1000
+    );
 
     // Block IP if limit exceeded
     if (exceeded && !rateLimit.isBlocked) {
@@ -84,7 +86,7 @@ export class RateLimitServiceImpl implements RateLimitService {
 
   async isBlocked(ip: string): Promise<boolean> {
     const now = new Date();
-    
+
     const blockedRecord = await this.prisma.rateLimit.findFirst({
       where: {
         ip,

@@ -29,7 +29,7 @@ export class RateLimiter {
 
     // Get current count
     const currentCount = await this.redis.incr(key);
-    
+
     // Set expiration on first request
     if (currentCount === 1) {
       await this.redis.expire(key, this.config.rateLimit.windowMs);
@@ -61,7 +61,7 @@ export class RateLimiter {
     const blockKey = `blocked:${ip}`;
     const durationMs = customDurationMs || this.config.rateLimit.blockDurationMs * 1000;
     const ttlSeconds = Math.ceil(durationMs / 1000);
-    
+
     await this.redis.set(blockKey, '1', ttlSeconds);
   }
 

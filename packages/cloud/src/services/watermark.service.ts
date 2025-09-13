@@ -8,7 +8,7 @@ export class WatermarkServiceImpl implements WatermarkService {
 
   async createWatermarkJob(articleId: string, userId: string, assetUrl: string): Promise<string> {
     const watermarkText = this.generateWatermarkText(userId);
-    
+
     const job = await this.prisma.watermarkJob.create({
       data: {
         articleId,
@@ -66,7 +66,7 @@ export class WatermarkServiceImpl implements WatermarkService {
     }
   }
 
-  async getWatermarkJob(jobId: string): Promise<any> {
+  async getWatermarkJob(jobId: string): Promise<unknown> {
     return this.prisma.watermarkJob.findUnique({
       where: { id: jobId },
     });
@@ -84,7 +84,7 @@ export class WatermarkServiceImpl implements WatermarkService {
 
     try {
       const page = await browser.newPage();
-      
+
       // Set viewport
       await page.setViewport({ width: 1200, height: 800 });
 
@@ -92,45 +92,50 @@ export class WatermarkServiceImpl implements WatermarkService {
       await page.goto(assetUrl, { waitUntil: 'networkidle0' });
 
       // Add watermark overlay
-      await page.evaluate((text, opacity, position) => {
-        const watermark = document.createElement('div');
-        watermark.textContent = text;
-        watermark.style.position = 'fixed';
-        watermark.style.zIndex = '9999';
-        watermark.style.color = 'rgba(0, 0, 0, 0.5)';
-        watermark.style.fontSize = '14px';
-        watermark.style.fontFamily = 'Arial, sans-serif';
-        watermark.style.pointerEvents = 'none';
-        watermark.style.opacity = opacity.toString();
-        watermark.style.userSelect = 'none';
+      await page.evaluate(
+        (text, opacity, position) => {
+          const watermark = document.createElement('div');
+          watermark.textContent = text;
+          watermark.style.position = 'fixed';
+          watermark.style.zIndex = '9999';
+          watermark.style.color = 'rgba(0, 0, 0, 0.5)';
+          watermark.style.fontSize = '14px';
+          watermark.style.fontFamily = 'Arial, sans-serif';
+          watermark.style.pointerEvents = 'none';
+          watermark.style.opacity = opacity.toString();
+          watermark.style.userSelect = 'none';
 
-        // Position the watermark
-        switch (position) {
-          case 'top-left':
-            watermark.style.top = '10px';
-            watermark.style.left = '10px';
-            break;
-          case 'top-right':
-            watermark.style.top = '10px';
-            watermark.style.right = '10px';
-            break;
-          case 'bottom-left':
-            watermark.style.bottom = '10px';
-            watermark.style.left = '10px';
-            break;
-          case 'bottom-right':
-            watermark.style.bottom = '10px';
-            watermark.style.right = '10px';
-            break;
-          case 'center':
-            watermark.style.top = '50%';
-            watermark.style.left = '50%';
-            watermark.style.transform = 'translate(-50%, -50%)';
-            break;
-        }
+          // Position the watermark
+          switch (position) {
+            case 'top-left':
+              watermark.style.top = '10px';
+              watermark.style.left = '10px';
+              break;
+            case 'top-right':
+              watermark.style.top = '10px';
+              watermark.style.right = '10px';
+              break;
+            case 'bottom-left':
+              watermark.style.bottom = '10px';
+              watermark.style.left = '10px';
+              break;
+            case 'bottom-right':
+              watermark.style.bottom = '10px';
+              watermark.style.right = '10px';
+              break;
+            case 'center':
+              watermark.style.top = '50%';
+              watermark.style.left = '50%';
+              watermark.style.transform = 'translate(-50%, -50%)';
+              break;
+          }
 
-        document.body.appendChild(watermark);
-      }, watermarkText, config.watermarking.opacity, config.watermarking.position);
+          document.body.appendChild(watermark);
+        },
+        watermarkText,
+        config.watermarking.opacity,
+        config.watermarking.position
+      );
 
       // Generate PDF with watermark
       const pdfBuffer = await page.pdf({
