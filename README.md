@@ -1,4 +1,7 @@
-# FortiFi
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.png" alt="FortiFi Logo" width="200" height="80">
+  <h1>FortiFi</h1>
+</div>
 
 [![CI](https://github.com/Obetta/FortiFi/actions/workflows/ci.yml/badge.svg)](https://github.com/Obetta/FortiFi/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
