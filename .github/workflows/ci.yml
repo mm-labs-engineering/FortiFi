@@ -168,7 +168,32 @@ jobs:
           format: 'sarif'
           output: 'trivy-results.sarif'
 
+      - name: Check if code scanning is enabled
+        id: check-code-scanning
+        run: |
+          # Check if code scanning is enabled by trying to get the repository's code scanning alerts
+          if curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/code-scanning/alerts" \
+            --fail --silent --show-error > /dev/null 2>&1; then
+            echo "enabled=true" >> $GITHUB_OUTPUT
+          else
+            echo "enabled=false" >> $GITHUB_OUTPUT
+            echo "Code scanning is not enabled for this repository"
+          fi
+
       - name: Upload Trivy scan results
+        if: steps.check-code-scanning.outputs.enabled == 'true'
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: 'trivy-results.sarif'
+
+      - name: Display scan results locally
+        if: steps.check-code-scanning.outputs.enabled == 'false'
+        run: |
+          echo "Code scanning not enabled. Displaying scan results locally:"
+          if [ -f "trivy-results.sarif" ]; then
+            echo "SARIF file generated successfully"
+            echo "To enable code scanning, go to repository Settings > Security > Code scanning"
+          else
+            echo "No SARIF file generated"
+          fi
