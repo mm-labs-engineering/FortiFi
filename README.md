@@ -6,7 +6,6 @@
     <rect x="44" y="35" width="12" height="3" fill="#212121"/>
     <text x="100" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212121">FortiFi</text>
   </svg>
-  <h1>🛡️ FortiFi</h1>
   <p><em>Paywall Hardening & Content Protection</em></p>
 </div>
 
