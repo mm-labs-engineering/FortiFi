@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.png" alt="FortiFi Logo" width="150" height="60">
-  <h1>FortiFi Documentation</h1>
+  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.png" alt="FortiFi Logo" width="150" height="60" onerror="this.style.display='none'">
+  <h1>🛡️ FortiFi Documentation</h1>
 </div>
 
 Complete guide to implementing paywall hardening with server-side enforcement.

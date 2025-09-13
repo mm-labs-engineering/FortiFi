@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.png" alt="FortiFi Logo" width="200" height="80">
-  <h1>FortiFi</h1>
+  <img src="https://raw.githubusercontent.com/Obetta/FortiFi/main/assets/logo.png" alt="FortiFi Logo" width="200" height="80" onerror="this.style.display='none'">
+  <h1>🛡️ FortiFi</h1>
+  <p><em>Paywall Hardening & Content Protection</em></p>
 </div>
 
 [![CI](https://github.com/Obetta/FortiFi/actions/workflows/ci.yml/badge.svg)](https://github.com/Obetta/FortiFi/actions/workflows/ci.yml)
