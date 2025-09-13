@@ -1,6 +1,5 @@
 <div align="center">
   <img width="704" height="229" alt="Screenshot 2025-09-13 at 2 56 09 PM" src="https://github.com/user-attachments/assets/1b71dbe6-fbe6-49f5-9f84-ab025426c53b" />
-  <h1>🛡️ FortiFi Documentation</h1>
 </div>
 
 Complete guide to implementing paywall hardening with server-side enforcement.
