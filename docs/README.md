@@ -1,5 +1,11 @@
 <div align="center">
-  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMjAwIDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0yMCAxNSBMMjAgMjUgQzIwIDM1LCAzMCA0NSwgNTAgNTAgQzcwIDQ1LCA4MCAzNSwgODAgMjUgTDgwIDE1IEM4MCAxMCwgNzUgNSwgNzAgNSBMMzAgNSBDMjUgNSwgMjAgMTAsIDIwIDE1IFoiIGZpbGw9IiM0Q0FGNTAiIHN0cm9rZT0iIzQ1YTA0OSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSIyNSIgcj0iOCIgZmlsbD0iIzIxMjEyMSIvPgogIDxyZWN0IHg9IjQ2IiB5PSIyNSIgd2lkdGg9IjgiIGhlaWdodD0iMTIiIGZpbGw9IiMyMTIxMjEiLz4KICA8cmVjdCB4PSI0NCIgeT0iMzUiIHdpZHRoPSIxMiIgaGVpZ2h0PSIzIiBmaWxsPSIjMjEyMTIxIi8+CiAgPHRleHQgeD0iMTAwIiB5PSIzNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzIxMjEyMSI+Rm9ydGlGaTwvdGV4dD4KPC9zdmc+" alt="FortiFi Logo" width="150" height="60">
+  <svg width="150" height="60" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 15 L20 25 C20 35, 30 45, 50 50 C70 45, 80 35, 80 25 L80 15 C80 10, 75 5, 70 5 L30 5 C25 5, 20 10, 20 15 Z" fill="#4CAF50" stroke="#45a049" stroke-width="1"/>
+    <circle cx="50" cy="25" r="8" fill="#212121"/>
+    <rect x="46" y="25" width="8" height="12" fill="#212121"/>
+    <rect x="44" y="35" width="12" height="3" fill="#212121"/>
+    <text x="100" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212121">FortiFi</text>
+  </svg>
   <h1>🛡️ FortiFi Documentation</h1>
 </div>
 

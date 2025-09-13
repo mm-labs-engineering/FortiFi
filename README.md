@@ -1,5 +1,11 @@
 <div align="center">
-  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgMjAwIDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDwhLS0gU2hpZWxkIGJhY2tncm91bmQgLS0+CiAgPHBhdGggZD0iTTIwIDE1IEwyMCAyNSBDMjAgMzUsIDMwIDQ1LCA1MCA1MCBDNzAgNDUsIDgwIDM1LCA4MCAyNSBMODAgMTUgQzgwIDEwLCA3NSA1LCA3MCA1IEwzMCA1IEMyNSA1LCAyMCAxMCwgMjAgMTUgWiIgCiAgICAgICAgZmlsbD0iIzRDQUY1MCIgCiAgICAgICAgc3Ryb2tlPSIjNDVhMDQ5IiAKICAgICAgICBzdHJva2Utd2lkdGg9IjEiLz4KICA8IS0tIEtleWhvbGUgLS0+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSIyNSIgcj0iOCIgZmlsbD0iIzIxMjEyMSIvPgogIDxyZWN0IHg9IjQ2IiB5PSIyNSIgd2lkdGg9IjgiIGhlaWdodD0iMTIiIGZpbGw9IiMyMTIxMjEiLz4KICA8cmVjdCB4PSI0NCIgeT0iMzUiIHdpZHRoPSIxMiIgaGVpZ2h0PSIzIiBmaWxsPSIjMjEyMTIxIi8+CiAgPCEtLSBUZXh0IC0tPgogIDx0ZXh0IHg9IjEwMCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMyMTIxMjEiPkZvcnRpRmk8L3RleHQ+Cjwvc3ZnPg==" alt="FortiFi Logo" width="200" height="80">
+  <svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 15 L20 25 C20 35, 30 45, 50 50 C70 45, 80 35, 80 25 L80 15 C80 10, 75 5, 70 5 L30 5 C25 5, 20 10, 20 15 Z" fill="#4CAF50" stroke="#45a049" stroke-width="1"/>
+    <circle cx="50" cy="25" r="8" fill="#212121"/>
+    <rect x="46" y="25" width="8" height="12" fill="#212121"/>
+    <rect x="44" y="35" width="12" height="3" fill="#212121"/>
+    <text x="100" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212121">FortiFi</text>
+  </svg>
   <h1>🛡️ FortiFi</h1>
   <p><em>Paywall Hardening & Content Protection</em></p>
 </div>
