@@ -169,7 +169,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Support
 
 - **Documentation**: [docs.fortifi.dev](https://docs.fortifi.dev)
-- **Issues**: [GitHub Issues](https://github.com/fortifi/fortifi/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/fortifi/fortifi/discussions)
+- **Issues**: [GitHub Issues](https://github.com/mm-labs-engineering/FortiFi/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/mm-labs-engineering/FortiFi/discussions)
 - **Security**: security@fortifi.dev
 - **Enterprise**: enterprise@fortifi.dev

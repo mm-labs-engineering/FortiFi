@@ -489,7 +489,7 @@ app.use((err, req, res, next) => {
 
 ## 🆘 Support
 
-- **GitHub Issues** → [Report Problems](https://github.com/fortifi/fortifi/issues)
+- **GitHub Issues** → [Report Problems](https://github.com/mm-labs-engineering/FortiFi/issues)
 - **Documentation** → [Full Docs](../README.md)
 - **Email Support** → support@fortifi.dev
 

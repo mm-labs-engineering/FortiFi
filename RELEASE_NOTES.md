@@ -35,7 +35,7 @@ FortiFi is now available in beta! This release includes the complete open-source
 npm install @fortifi/core @fortifi/client
 
 # Or use the demo
-git clone https://github.com/fortifi/fortifi.git
+git clone https://github.com/mm-labs-engineering/FortiFi.git
 cd fortifi
 docker-compose up
 ```
@@ -83,8 +83,8 @@ docker-compose up
 ### 📞 Support
 
 - **Documentation**: [docs.fortifi.dev](https://docs.fortifi.dev)
-- **Issues**: [GitHub Issues](https://github.com/fortifi/fortifi/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/fortifi/fortifi/discussions)
+- **Issues**: [GitHub Issues](https://github.com/mm-labs-engineering/FortiFi/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/mm-labs-engineering/FortiFi/discussions)
 - **Email**: support@fortifi.dev
 
 ### 🙏 Acknowledgments

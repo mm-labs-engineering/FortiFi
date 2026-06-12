@@ -541,7 +541,7 @@ app.listen(3000);
 ## Support
 
 - Documentation: https://fortifi.dev/docs
-- GitHub: https://github.com/fortifi/fortifi
+- GitHub: https://github.com/mm-labs-engineering/FortiFi
 - Demo: https://demo.fortifi.dev
 - Support: support@fortifi.dev
 - Enterprise: enterprise@fortifi.dev

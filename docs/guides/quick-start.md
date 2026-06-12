@@ -5,7 +5,7 @@ Get FortiFi running in 5 minutes.
 ## Option 1: Try the Demo
 
 ```bash
-git clone https://github.com/fortifi/fortifi.git
+git clone https://github.com/mm-labs-engineering/FortiFi.git
 cd fortifi
 pnpm install
 cd examples/demo
@@ -122,6 +122,6 @@ app.listen(3000);
 
 ## Support
 
-- [GitHub Issues](https://github.com/fortifi/fortifi/issues) - Bug reports
-- [GitHub Discussions](https://github.com/fortifi/fortifi/discussions) - Questions
+- [GitHub Issues](https://github.com/mm-labs-engineering/FortiFi/issues) - Bug reports
+- [GitHub Discussions](https://github.com/mm-labs-engineering/FortiFi/discussions) - Questions
 - Email: support@fortifi.dev

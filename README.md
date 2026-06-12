@@ -3,12 +3,14 @@
   <p><em>Paywall Hardening & Content Protection</em></p>
 </div>
 
-[![CI](https://github.com/Obetta/FortiFi/actions/workflows/ci.yml/badge.svg)](https://github.com/Obetta/FortiFi/actions/workflows/ci.yml)
+[![CI](https://github.com/mm-labs-engineering/FortiFi/actions/workflows/ci.yml/badge.svg)](https://github.com/mm-labs-engineering/FortiFi/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)
 
 Open-source toolkit that hardens paywalls against CSS/DOM bypasses through server-side enforcement, short-lived tokens, watermarking, and rate limiting.
+
+> Part of [Millimeter Labs](https://labs.40millimeter.com/products/fortifi).
 
 > **Status**: Currently in Beta (v0.1.0-beta.1) - Released September 13, 2025 - See [Roadmap](docs/roadmap.md) for upcoming features
 
@@ -85,7 +87,7 @@ See our [Roadmap](docs/roadmap.md) for detailed feature timeline.
 
 ```bash
 npm install -g pnpm
-git clone https://github.com/fortifi/fortifi.git
+git clone https://github.com/mm-labs-engineering/FortiFi.git
 cd fortifi
 pnpm install
 ```
@@ -315,8 +317,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## Support
 
 - [Documentation](https://fortifi.dev/docs)
-- [Issue Tracker](https://github.com/fortifi/fortifi/issues)
-- [Discussions](https://github.com/fortifi/fortifi/discussions)
+- [Issue Tracker](https://github.com/mm-labs-engineering/FortiFi/issues)
+- [Discussions](https://github.com/mm-labs-engineering/FortiFi/discussions)
 - [Email Support](mailto:support@fortifi.dev)
 
 ## Acknowledgments

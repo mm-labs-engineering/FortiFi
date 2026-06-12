@@ -221,8 +221,8 @@ Total AWS Cost:                           $142.50
 ## Getting Involved
 
 ### For Open Source Contributors
-- Join our [GitHub Discussions](https://github.com/fortifi/fortifi/discussions)
-- Check out [good first issues](https://github.com/fortifi/fortifi/labels/good%20first%20issue)
+- Join our [GitHub Discussions](https://github.com/mm-labs-engineering/FortiFi/discussions)
+- Check out [good first issues](https://github.com/mm-labs-engineering/FortiFi/labels/good%20first%20issue)
 - Read our [Contributing Guide](CONTRIBUTING.md)
 - Follow our [Code of Conduct](CODE_OF_CONDUCT.md)
 

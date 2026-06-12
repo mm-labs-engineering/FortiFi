@@ -3,236 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FortiFi Demo - Paywall Hardening</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 1rem 0;
-            margin-bottom: 2rem;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #007bff;
-        }
-        
-        .user-info {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .user-id-input {
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            width: 200px;
-        }
-        
-        .btn {
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: background-color 0.2s;
-        }
-        
-        .btn-primary {
-            background: #4CAF50;
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: #45a049;
-        }
-        
-        .btn-secondary {
-            background: #212121;
-            color: white;
-        }
-        
-        .btn-secondary:hover {
-            background: #424242;
-        }
-        
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .article-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-            border-left: 4px solid #4CAF50;
-        }
-        
-        .article-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(76, 175, 80, 0.2);
-        }
-        
-        .article-header {
-            padding: 1.5rem;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .article-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-        
-        .article-meta {
-            font-size: 0.875rem;
-            color: #666;
-            margin-bottom: 1rem;
-        }
-        
-        .article-content {
-            padding: 1.5rem;
-        }
-        
-        .article-teaser {
-            color: #666;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-        
-        .article-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .tag {
-            background: #e9ecef;
-            color: #495057;
-            padding: 0.25rem 0.5rem;
-            border-radius: 12px;
-            font-size: 0.75rem;
-        }
-        
-        .premium-badge {
-            background: #4CAF50;
-            color: white;
-            padding: 0.25rem 0.5rem;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-        
-        .article-actions {
-            display: flex;
-            gap: 0.5rem;
-        }
-        
-        .btn-read {
-            flex: 1;
-        }
-        
-        .status {
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            display: none;
-        }
-        
-        .status.success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-        
-        .status.error {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-        
-        .status.info {
-            background: #d1ecf1;
-            color: #0c5460;
-            border: 1px solid #bee5eb;
-        }
-        
-        .loading {
-            display: none;
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .spinner {
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #007bff;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 1rem;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 2rem 0;
-            color: #666;
-            border-top: 1px solid #eee;
-            margin-top: 3rem;
-        }
-    </style>
+    <title>FortiFi Demo · Paywall hardening</title>
+    <link rel="stylesheet" href="/mm-labs-demo.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <img width="200" height="65" alt="FortiFi Logo" src="https://github.com/user-attachments/assets/1b71dbe6-fbe6-49f5-9f84-ab025426c53b" style="vertical-align: middle; margin-right: 10px;">
-                    🛡️ FortiFi Demo
-                </div>
+                <div class="logo"><span>FortiFi</span> demo</div>
                 <div class="user-info">
-                    <input type="text" id="userIdInput" class="user-id-input" placeholder="Enter User ID" value="demo-user-123">
-                    <button id="loadArticlesBtn" class="btn btn-primary">Load Articles</button>
+                    <input type="text" id="userIdInput" class="user-id-input" placeholder="User ID" value="demo-user-123">
+                    <button id="loadArticlesBtn" class="btn btn-primary">Load articles</button>
                 </div>
             </div>
         </div>
@@ -249,7 +30,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 FortiFi. Open-source paywall hardening toolkit.</p>
+            <p>FortiFi · MIT core · <a href="https://labs.40millimeter.com/products/fortifi">Millimeter Labs</a></p>
         </div>
     </footer>
 
@@ -274,7 +55,6 @@
                         this.showStatus('Please enter a User ID', 'error');
                         return;
                     }
-                    // Save user ID to localStorage
                     localStorage.setItem('fortifi_user_id', this.userId);
                     this.loadArticles();
                 });
@@ -296,7 +76,7 @@
                     if (!response.ok) {
                         throw new Error('Failed to load articles');
                     }
-                    
+
                     this.articles = await response.json();
                     this.renderArticles();
                 } catch (error) {
@@ -311,23 +91,22 @@
                 container.innerHTML = '';
 
                 this.articles.forEach(article => {
-                    const articleCard = this.createArticleCard(article);
-                    container.appendChild(articleCard);
+                    container.appendChild(this.createArticleCard(article));
                 });
             }
 
             createArticleCard(article) {
                 const card = document.createElement('div');
                 card.className = 'article-card';
-                
+
                 const tags = article.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-                const premiumBadge = article.isPremium ? '<span class="premium-badge">🔒 Premium</span>' : '';
-                
+                const premiumBadge = article.isPremium ? '<span class="premium-badge">Premium</span>' : '';
+
                 card.innerHTML = `
                     <div class="article-header">
                         <h3 class="article-title">${article.title}</h3>
                         <div class="article-meta">
-                            By ${article.author} • ${new Date(article.publishedAt).toLocaleDateString()}
+                            By ${article.author} · ${new Date(article.publishedAt).toLocaleDateString()}
                         </div>
                     </div>
                     <div class="article-content">
@@ -336,42 +115,36 @@
                         <div class="article-tags">${tags}</div>
                         <div class="article-actions">
                             <button class="btn btn-primary btn-read" onclick="app.readArticle('${article.id}')">
-                                ${article.isPremium ? 'Unlock Article' : 'Read Article'}
+                                ${article.isPremium ? 'Unlock article' : 'Read article'}
                             </button>
                         </div>
                     </div>
                 `;
-                
+
                 return card;
             }
 
             async readArticle(articleId) {
                 try {
-                    console.log('readArticle called with:', articleId);
                     this.showStatus('Loading article...', 'info');
-                    
-                    // Find the article to check if it's premium
+
                     const article = this.articles.find(a => a.id === articleId);
-                    
+
                     if (article && article.isPremium) {
-                        // Premium article - check for valid token
                         const tokenKey = `fortifi_token_${this.userId}_${articleId}`;
                         const tokenData = localStorage.getItem(tokenKey);
-                        
+
                         if (tokenData) {
                             const { token, expiresAt } = JSON.parse(tokenData);
                             if (Date.now() / 1000 < expiresAt) {
-                                // Token is still valid, redirect with token
                                 window.location.href = `/article/${articleId}?token=${token}`;
                                 return;
                             }
                         }
                     }
-                    
-                    // Free article or no valid token, redirect normally
+
                     window.location.href = `/article/${articleId}`;
                 } catch (error) {
-                    console.error('Error in readArticle:', error);
                     this.showStatus(`Error: ${error.message}`, 'error');
                 }
             }
@@ -384,20 +157,15 @@
             }
 
             hideStatus() {
-                const status = document.getElementById('status');
-                status.style.display = 'none';
+                document.getElementById('status').style.display = 'none';
             }
 
             showLoading(show) {
-                const loading = document.getElementById('loading');
-                loading.style.display = show ? 'block' : 'none';
+                document.getElementById('loading').style.display = show ? 'block' : 'none';
             }
         }
 
-        // Initialize app
-        console.log('Initializing ArticleApp...');
         const app = new ArticleApp();
-        console.log('ArticleApp initialized:', app);
     </script>
 </body>
 </html>

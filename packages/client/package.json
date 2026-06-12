@@ -45,7 +45,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fortifi/fortifi.git",
+    "url": "https://github.com/mm-labs-engineering/FortiFi.git",
     "directory": "packages/client"
   },
   "publishConfig": {

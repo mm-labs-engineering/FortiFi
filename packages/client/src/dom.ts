@@ -101,34 +101,34 @@ export class FortiFiDOM {
   private getDefaultCTATemplate(): string {
     return `
       <div style="
-        background: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 8px;
+        background: #0f0f0f;
+        border: 1px solid rgba(34, 211, 238, 0.35);
+        border-radius: 10px;
         padding: 2rem;
         text-align: center;
         margin: 2rem 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       ">
-        <h3 style="margin: 0 0 1rem 0; color: #495057;">🔒 Premium Content</h3>
-        <p style="margin: 0 0 1.5rem 0; color: #6c757d;">
-          This content is available to premium subscribers only.
+        <h3 style="margin: 0 0 1rem 0; color: #ffffff;">Premium content</h3>
+        <p style="margin: 0 0 1.5rem 0; color: rgba(255, 255, 255, 0.6);">
+          Full HTML loads only after the server validates a short-lived token.
         </p>
         <button 
           id="fortifi-subscribe-btn"
           style="
-            background: #007bff;
+            background: rgba(34, 211, 238, 0.12);
             color: white;
-            border: none;
+            border: 1px solid rgba(34, 211, 238, 0.4);
             padding: 0.75rem 1.5rem;
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 1rem;
             cursor: pointer;
             transition: background-color 0.2s;
           "
-          onmouseover="this.style.background='#0056b3'"
-          onmouseout="this.style.background='#007bff'"
+          onmouseover="this.style.background='rgba(34, 211, 238, 0.2)'"
+          onmouseout="this.style.background='rgba(34, 211, 238, 0.12)'"
         >
-          Subscribe Now
+          Unlock content
         </button>
       </div>
     `;

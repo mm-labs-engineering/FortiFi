@@ -96,8 +96,8 @@ const fortifi = createFortiFi({
 
 ## Support
 
-- [GitHub Issues](https://github.com/fortifi/fortifi/issues) - Bug reports
-- [GitHub Discussions](https://github.com/fortifi/fortifi/discussions) - Questions
+- [GitHub Issues](https://github.com/mm-labs-engineering/FortiFi/issues) - Bug reports
+- [GitHub Discussions](https://github.com/mm-labs-engineering/FortiFi/discussions) - Questions
 - Email: support@fortifi.dev
 - Enterprise: enterprise@fortifi.dev
 

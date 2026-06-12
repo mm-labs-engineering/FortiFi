@@ -297,6 +297,6 @@ const fortifi = createFortiFi({
 
 ## Support
 
-- [GitHub Issues](https://github.com/fortifi/fortifi/issues) - Bug reports
+- [GitHub Issues](https://github.com/mm-labs-engineering/FortiFi/issues) - Bug reports
 - [Documentation](../README.md) - Full docs
 - Email: support@fortifi.dev
