@@ -101,32 +101,34 @@ export class FortiFiDOM {
   private getDefaultCTATemplate(): string {
     return `
       <div style="
-        background: #0f0f0f;
-        border: 1px solid rgba(34, 211, 238, 0.35);
+        background: #141414;
+        border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 10px;
-        padding: 2rem;
-        text-align: center;
-        margin: 2rem 0;
+        padding: 1.25rem;
+        margin: 1.25rem 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       ">
-        <h3 style="margin: 0 0 1rem 0; color: #ffffff;">Premium content</h3>
-        <p style="margin: 0 0 1.5rem 0; color: rgba(255, 255, 255, 0.6);">
-          Full HTML loads only after the server validates a short-lived token.
+        <h3 style="margin: 0 0 0.4rem 0; color: #ffffff; font-size: 1rem; letter-spacing: -0.02em;">Held on the server</h3>
+        <p style="margin: 0 0 1rem 0; color: rgba(255, 255, 255, 0.6); line-height: 1.55;">
+          Full HTML loads only after the server accepts a short-lived token.
         </p>
-        <button 
+        <button
           id="fortifi-subscribe-btn"
+          type="button"
           style="
-            background: rgba(34, 211, 238, 0.12);
-            color: white;
-            border: 1px solid rgba(34, 211, 238, 0.4);
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
-            font-size: 1rem;
+            background: #f4f4f5;
+            color: #0d0d0d;
+            border: 1px solid #f4f4f5;
+            min-height: 44px;
+            padding: 0.65rem 1rem;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
             cursor: pointer;
-            transition: background-color 0.2s;
           "
-          onmouseover="this.style.background='rgba(34, 211, 238, 0.2)'"
-          onmouseout="this.style.background='rgba(34, 211, 238, 0.12)'"
+          onpointerdown="this.style.transform='scale(0.97)'"
+          onpointerup="this.style.transform='scale(1)'"
+          onpointerleave="this.style.transform='scale(1)'"
         >
           Unlock content
         </button>

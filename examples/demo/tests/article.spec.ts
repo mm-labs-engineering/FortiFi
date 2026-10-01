@@ -6,7 +6,7 @@ test.describe('FortiFi Demo - Article Page', () => {
   });
 
   test('should display article list', async ({ page }) => {
-    await expect(page.locator('h1')).toContainText('FortiFi Demo');
+    await expect(page.locator('h1')).toContainText('The HTML stays on the server');
     await expect(page.locator('.article-card')).toHaveCount(2);
   });
 

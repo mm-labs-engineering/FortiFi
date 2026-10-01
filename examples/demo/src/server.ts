@@ -21,7 +21,7 @@ const fortifi = createFortiFi({
     blockDurationMs: 300,
   },
   token: {
-    ttl: 300, // 5 minutes for demo
+    ttl: 60,
     algorithm: 'HS256',
   },
   security: {
@@ -171,6 +171,25 @@ app.get('/api/articles', (req, res) => {
   );
 });
 
+function publicArticle(article: (typeof articles)[number]) {
+  const preview = {
+    id: article.id,
+    title: article.title,
+    teaser: article.teaser,
+    author: article.author,
+    publishedAt: article.publishedAt,
+    category: article.category,
+    tags: article.tags,
+    isPremium: article.isPremium,
+  };
+
+  if (article.isPremium) {
+    return preview;
+  }
+
+  return { ...preview, content: article.content };
+}
+
 app.get('/api/article/:id', (req, res) => {
   const articleId = req.params['id'];
   const article = articles.find(a => a.id === articleId);
@@ -179,7 +198,7 @@ app.get('/api/article/:id', (req, res) => {
     return res.status(404).json({ error: 'Article not found' });
   }
 
-  return res.json(article);
+  return res.json(publicArticle(article));
 });
 
 // Token endpoint (simplified for demo)
@@ -190,9 +209,8 @@ app.post('/api/token', (req, res) => {
     return res.status(400).json({ error: 'Article ID and User ID are required' });
   }
 
-  // Generate token using FortiFi
   const token = fortifi.generateToken(userId, articleId);
-  const expiresAt = Math.floor(Date.now() / 1000) + 60; // 60 seconds from now
+  const expiresAt = Math.floor(Date.now() / 1000) + 60;
 
   return res.json({
     token,
@@ -211,33 +229,16 @@ app.get('/api/article/:id/content', (req, res) => {
     return res.status(404).json({ error: 'Article not found' });
   }
 
-  // Check for token in Authorization header or query parameter
   const authHeader = req.headers.authorization;
-  const tokenFromQuery = req.query['token'] as string;
+  const token = authHeader?.startsWith('Bearer ') ? authHeader.slice(7) : null;
 
-  if (authHeader && authHeader.startsWith('Bearer ')) {
-    const token = authHeader.substring(7);
-    try {
-      // Validate token using FortiFi
-      const isValid = fortifi.verifyToken(token);
-      if (!isValid) {
-        return res.status(401).json({ error: 'Invalid or expired token' });
-      }
-    } catch (error) {
-      return res.status(401).json({ error: 'Invalid token' });
-    }
-  } else if (tokenFromQuery) {
-    try {
-      // Validate token from query parameter
-      const isValid = fortifi.verifyToken(tokenFromQuery);
-      if (!isValid) {
-        return res.status(401).json({ error: 'Invalid or expired token' });
-      }
-    } catch (error) {
-      return res.status(401).json({ error: 'Invalid token' });
-    }
-  } else {
+  if (!token) {
     return res.status(401).json({ error: 'Token required' });
+  }
+
+  const payload = fortifi.verifyToken(token);
+  if (!payload || payload.articleId !== articleId) {
+    return res.status(401).json({ error: 'Invalid or expired token' });
   }
 
   return res.json({

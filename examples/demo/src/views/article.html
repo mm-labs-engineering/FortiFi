@@ -10,27 +10,25 @@
     <header>
         <div class="container-narrow">
             <div class="header-content">
-                <a href="/" class="logo"><span>FortiFi</span> demo</a>
-                <a href="/" class="back-btn">← Back to articles</a>
+                <a href="/" class="logo">FortiFi<small>Demo</small></a>
+                <a href="/" class="nav-link">Back to articles</a>
             </div>
         </div>
     </header>
 
-    <div class="container-narrow">
-        <div id="status" class="status"></div>
+    <main class="container-narrow page">
+        <div id="status" class="status" role="status"></div>
         <div id="loading" class="loading">
-            <div class="spinner"></div>
-            <p>Loading article...</p>
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Loading article</p>
         </div>
 
-        <div id="articleContainer" class="article-container" style="display: none;">
-            <div class="article-header">
-                <h1 id="articleTitle" class="article-title"></h1>
-                <div id="articleMeta" class="article-meta"></div>
-            </div>
+        <article id="articleContainer" class="article-shell" style="display: none;">
+            <h1 id="articleTitle"></h1>
+            <div id="articleMeta" class="article-meta"></div>
             <div id="articleBody" class="article-content"></div>
-        </div>
-    </div>
+        </article>
+    </main>
 
     <footer class="footer">
         <div class="container-narrow">
@@ -42,8 +40,8 @@
         class ArticlePage {
             constructor() {
                 this.articleId = this.getArticleIdFromUrl();
-                this.userId = this.getUserIdFromStorage();
-                this.token = this.getTokenFromUrl();
+                this.userId = localStorage.getItem('fortifi_user_id') || 'demo-user-123';
+                this.token = this.getStoredToken();
                 this.init();
             }
 
@@ -52,17 +50,24 @@
             }
 
             getArticleIdFromUrl() {
-                const path = window.location.pathname;
-                const match = path.match(/\/article\/(.+)/);
+                const match = window.location.pathname.match(/\/article\/(.+)/);
                 return match ? match[1] : null;
             }
 
-            getUserIdFromStorage() {
-                return localStorage.getItem('fortifi_user_id') || 'demo-user-123';
+            tokenKey() {
+                return `fortifi_token_${this.userId}_${this.articleId}`;
             }
 
-            getTokenFromUrl() {
-                return new URLSearchParams(window.location.search).get('token');
+            getStoredToken() {
+                const raw = localStorage.getItem(this.tokenKey());
+                if (!raw) return null;
+                try {
+                    const { token, expiresAt } = JSON.parse(raw);
+                    if (Date.now() / 1000 < expiresAt) return token;
+                } catch (error) {
+                    return null;
+                }
+                return null;
             }
 
             async loadArticle() {
@@ -82,13 +87,13 @@
                         if (this.token) {
                             await this.loadFullContent(this.token);
                         } else {
-                            await this.handlePremiumContent();
+                            this.renderPaywall(article);
                         }
                     } else {
-                        await this.loadFullContent();
+                        this.renderFullContent({ content: article.content });
                     }
                 } catch (error) {
-                    this.showStatus(`Error loading article: ${error.message}`, 'error');
+                    this.showStatus(error.message, 'error');
                 } finally {
                     this.showLoading(false);
                 }
@@ -97,27 +102,18 @@
             renderArticleHeader(article) {
                 document.getElementById('pageTitle').textContent = `${article.title} · FortiFi demo`;
                 document.getElementById('articleTitle').textContent = article.title;
-
-                document.getElementById('articleMeta').innerHTML = `
-                    <span>By ${article.author}</span>
-                    <span>·</span>
-                    <span>${new Date(article.publishedAt).toLocaleDateString()}</span>
-                    <span>·</span>
-                    <span>${article.category}</span>
-                `;
+                document.getElementById('articleMeta').textContent =
+                    `${article.author} · ${new Date(article.publishedAt).toLocaleDateString()} · ${article.category}`;
             }
 
-            async handlePremiumContent() {
-                const articleResponse = await fetch(`/api/article/${this.articleId}`);
-                const article = await articleResponse.json();
-
+            renderPaywall(article) {
                 document.getElementById('articleBody').innerHTML = `
                     <div class="premium-badge">Premium</div>
                     <p>${article.teaser}</p>
                     <div id="paywall-cta" class="paywall-cta">
-                        <h3>Premium content</h3>
-                        <p>Full HTML loads only after the server validates a short-lived token.</p>
-                        <button id="unlock-btn" class="btn btn-primary">Unlock article</button>
+                        <h2>Held on the server</h2>
+                        <p>The full article is not in this page. Unlock asks for a token, then loads the HTML.</p>
+                        <button id="unlock-btn" class="btn btn-primary" type="button">Unlock article</button>
                     </div>
                 `;
 
@@ -146,34 +142,25 @@
                     }
 
                     const { token, expiresAt } = await tokenResponse.json();
-                    const tokenKey = `fortifi_token_${this.userId}_${this.articleId}`;
-                    localStorage.setItem(tokenKey, JSON.stringify({ token, expiresAt }));
+                    localStorage.setItem(this.tokenKey(), JSON.stringify({ token, expiresAt }));
+                    this.token = token;
 
                     await this.loadFullContent(token);
-                    this.showStatus('Article unlocked successfully.', 'success');
+                    this.showStatus('Article unlocked.', 'success');
                 } catch (error) {
-                    this.showStatus(`Failed to unlock article: ${error.message}`, 'error');
+                    this.showStatus(`Failed to unlock article. ${error.message}`, 'error');
                     unlockBtn.disabled = false;
                     unlockBtn.textContent = 'Unlock article';
                 }
             }
 
-            async loadFullContent(token = null) {
-                if (!token) {
-                    const response = await fetch(`/api/article/${this.articleId}`);
-                    if (!response.ok) throw new Error('Failed to load article');
-                    const article = await response.json();
-                    this.renderFullContent({ content: article.content });
-                    return;
-                }
-
+            async loadFullContent(token) {
                 const response = await fetch(`/api/article/${this.articleId}/content`, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
 
                 if (!response.ok) {
                     if (response.status === 401) throw new Error('Invalid or expired token');
-                    if (response.status === 403) throw new Error('Access denied');
                     throw new Error('Failed to load content');
                 }
 

@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FortiFi Demo · Paywall hardening</title>
+    <title>FortiFi demo · Paywall hardening</title>
     <link rel="stylesheet" href="/mm-labs-demo.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo"><span>FortiFi</span> demo</div>
-                <div class="user-info">
-                    <input type="text" id="userIdInput" class="user-id-input" placeholder="User ID" value="demo-user-123">
-                    <button id="loadArticlesBtn" class="btn btn-primary">Load articles</button>
-                </div>
+                <a href="/" class="logo">FortiFi<small>Demo</small></a>
+                <a class="nav-link" href="https://labs.40millimeter.com/products/fortifi">Millimeter Labs</a>
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <div id="status" class="status"></div>
+    <main class="container page">
+        <p class="kicker">FF-00 · Paywall demo</p>
+        <h1>The HTML stays on the server</h1>
+        <p class="lede">Unpaid requests get a teaser. The full article is a second response, and only after a short-lived token checks out.</p>
+
+        <section class="session" aria-label="Session">
+            <p class="session-label">Session</p>
+            <div class="session-row">
+                <input type="text" id="userIdInput" class="user-id-input" placeholder="User ID" value="demo-user-123" autocomplete="off">
+                <button id="loadArticlesBtn" class="btn btn-primary" type="button">Use this ID</button>
+            </div>
+        </section>
+
+        <div id="status" class="status" role="status"></div>
         <div id="loading" class="loading">
-            <div class="spinner"></div>
-            <p>Loading articles...</p>
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Loading articles</p>
         </div>
-        <div id="articlesContainer" class="articles-grid"></div>
-    </div>
+
+        <section class="catalog" aria-label="Articles">
+            <p class="section-label">Articles</p>
+            <div id="articlesContainer" class="articles-grid"></div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -52,7 +65,7 @@
                 document.getElementById('loadArticlesBtn').addEventListener('click', () => {
                     this.userId = document.getElementById('userIdInput').value.trim();
                     if (!this.userId) {
-                        this.showStatus('Please enter a User ID', 'error');
+                        this.showStatus('Enter a user ID', 'error');
                         return;
                     }
                     localStorage.setItem('fortifi_user_id', this.userId);
@@ -80,7 +93,7 @@
                     this.articles = await response.json();
                     this.renderArticles();
                 } catch (error) {
-                    this.showStatus(`Error loading articles: ${error.message}`, 'error');
+                    this.showStatus(`Could not load articles. ${error.message}`, 'error');
                 } finally {
                     this.showLoading(false);
                 }
@@ -90,63 +103,32 @@
                 const container = document.getElementById('articlesContainer');
                 container.innerHTML = '';
 
-                this.articles.forEach(article => {
-                    container.appendChild(this.createArticleCard(article));
+                this.articles.forEach((article, index) => {
+                    container.appendChild(this.createArticleCard(article, index));
                 });
             }
 
-            createArticleCard(article) {
-                const card = document.createElement('div');
+            createArticleCard(article, index) {
+                const card = document.createElement('article');
                 card.className = 'article-card';
 
+                const code = `FF-${String(index + 1).padStart(2, '0')}`;
                 const tags = article.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-                const premiumBadge = article.isPremium ? '<span class="premium-badge">Premium</span>' : '';
+                const access = article.isPremium ? 'Premium' : 'Open';
+                const action = article.isPremium ? 'Unlock article' : 'Read article';
 
                 card.innerHTML = `
-                    <div class="article-header">
-                        <h3 class="article-title">${article.title}</h3>
-                        <div class="article-meta">
-                            By ${article.author} · ${new Date(article.publishedAt).toLocaleDateString()}
-                        </div>
-                    </div>
-                    <div class="article-content">
-                        ${premiumBadge}
-                        <div class="article-teaser">${article.teaser}</div>
-                        <div class="article-tags">${tags}</div>
-                        <div class="article-actions">
-                            <button class="btn btn-primary btn-read" onclick="app.readArticle('${article.id}')">
-                                ${article.isPremium ? 'Unlock article' : 'Read article'}
-                            </button>
-                        </div>
+                    <p class="article-index">${code} · ${access}</p>
+                    <a class="article-title" href="/article/${article.id}">${article.title}</a>
+                    <p class="article-meta">${article.author} · ${new Date(article.publishedAt).toLocaleDateString()}</p>
+                    <p class="article-teaser">${article.teaser}</p>
+                    <div class="article-tags">${tags}</div>
+                    <div class="article-actions">
+                        <a class="btn btn-primary btn-read" href="/article/${article.id}">${action}</a>
                     </div>
                 `;
 
                 return card;
-            }
-
-            async readArticle(articleId) {
-                try {
-                    this.showStatus('Loading article...', 'info');
-
-                    const article = this.articles.find(a => a.id === articleId);
-
-                    if (article && article.isPremium) {
-                        const tokenKey = `fortifi_token_${this.userId}_${articleId}`;
-                        const tokenData = localStorage.getItem(tokenKey);
-
-                        if (tokenData) {
-                            const { token, expiresAt } = JSON.parse(tokenData);
-                            if (Date.now() / 1000 < expiresAt) {
-                                window.location.href = `/article/${articleId}?token=${token}`;
-                                return;
-                            }
-                        }
-                    }
-
-                    window.location.href = `/article/${articleId}`;
-                } catch (error) {
-                    this.showStatus(`Error: ${error.message}`, 'error');
-                }
             }
 
             showStatus(message, type = 'info') {

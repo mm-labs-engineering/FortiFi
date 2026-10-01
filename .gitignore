@@ -79,6 +79,8 @@ dist
 # Gatsby files
 .cache/
 public
+!examples/demo/src/public/
+!examples/demo/src/public/**
 
 # Storybook build outputs
 .out
