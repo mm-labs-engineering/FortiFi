@@ -1,0 +1,5 @@
+{
+  "name": "@fortifi/example-next",
+  "private": true,
+  "description": "Next.js App Router snippet. Copy the route into an existing app."
+}

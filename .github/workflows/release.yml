@@ -40,10 +40,6 @@ jobs:
 
       - name: Run tests
         run: pnpm run test
-        env:
-          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/fortifi_test
-          REDIS_URL: redis://localhost:6379
-          JWT_SECRET: test-secret-key
 
       - name: Configure Git
         run: |
@@ -67,23 +63,3 @@ jobs:
           pnpm publish --access public --no-git-checks
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Build and push Docker images
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: |
-            fortifi/api:latest
-            fortifi/api:${{ github.ref_name }}
-          file: packages/cloud/Dockerfile
-
-      - name: Build and push Demo Docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: |
-            fortifi/demo:latest
-            fortifi/demo:${{ github.ref_name }}
-          file: examples/demo/Dockerfile

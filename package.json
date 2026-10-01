@@ -1,7 +1,7 @@
 {
   "name": "fortifi",
   "version": "0.1.0-beta.1",
-  "description": "Open-source + SaaS-ready toolkit that hardens paywalls against CSS/DOM bypasses",
+  "description": "Sign a short token, verify it, and withhold premium bytes",
   "private": true,
   "workspaces": [
     "packages/*",
