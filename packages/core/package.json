@@ -1,11 +1,12 @@
 {
   "name": "@fortifi/core",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0",
   "description": "Sign a short token, verify it, and withhold premium bytes",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc",

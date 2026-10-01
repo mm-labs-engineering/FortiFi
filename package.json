@@ -1,6 +1,6 @@
 {
   "name": "fortifi",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0",
   "description": "Sign a short token, verify it, and withhold premium bytes",
   "private": true,
   "workspaces": [
