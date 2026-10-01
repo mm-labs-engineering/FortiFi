@@ -7,10 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
-- FortiFi Editions comparison table
-- Beta versioning system
-- Enterprise feature roadmap
+## [0.1.0] - 2026-10-01
+
+First public release. MIT.
+
+### Changed
+- `@fortifi/core` is the only package. `sign`, `read`, and `open` withhold the body unless the token was minted for that article.
+- Removed `@fortifi/cloud`, `@fortifi/client`, the article demo, and the hosted-platform roadmap.
+- License file matches the package. MIT.
 
 ## [0.1.0-beta.1] - 2025-09-13
 
